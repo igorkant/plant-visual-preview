@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plant3D — interactive layouts</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh;
+    background: #0e1116; color: #d8dee6;
+    font: 15px/1.55 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex; align-items: center; justify-content: center; padding: 40px 20px;
+  }
+  main { width: 100%; max-width: 760px; }
+  h1 { font-size: 22px; font-weight: 600; margin: 0 0 6px; letter-spacing: .2px; }
+  .sub { color: #8b95a3; font-size: 14px; margin: 0 0 28px; }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+  a.card {
+    display: block; text-decoration: none; color: inherit;
+    background: #161b22; border: 1px solid #262d36; border-radius: 10px;
+    padding: 16px 18px; transition: border-color .15s, background .15s, transform .15s;
+  }
+  a.card:hover { border-color: #3d7dd8; background: #1a212b; transform: translateY(-1px); }
+  .name { font-size: 16px; font-weight: 600; color: #e8edf4; }
+  .tag { font-size: 12px; color: #6f7c8c; margin-left: 8px; font-weight: 400; }
+  .desc { color: #8b95a3; font-size: 13.5px; margin-top: 4px; }
+  footer { margin-top: 28px; color: #6f7c8c; font-size: 12.5px; }
+  code { background: #1c232c; border-radius: 4px; padding: 1px 5px; font-size: 12px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Plant3D — interactive plant layouts</h1>
+  <p class="sub">Self-contained WebGL scenes. Click equipment for details; append <code>?pid=1</code> to any link for the 2D P&amp;ID view.</p>
+  <ul>
+    <li><a class="card" href="dle.html">
+      <div class="name">DLE plant<span class="tag">dle.html</span></div>
+      <div class="desc">Continuous direct lithium extraction — sorption / wash / desorption cycle, NMR analysers, dosing skids, control cabinet.</div>
+    </a></li>
+    <li><a class="card" href="dle-1000.html">
+      <div class="name">DLE plant — 1000 m³/d<span class="tag">dle-1000.html</span></div>
+      <div class="desc">Brine at 50 ppm Li on a ten-column skid: 100 BV/h through radial columns off a single valve manifold, ~4 of the 10 on duty at any instant, 2 h sorption at 85 % recovery, with NMR analysers and dosing skids on the feed line.</div>
+    </a></li>
+    <li><a class="card" href="pontoon.html">
+      <div class="name">Floating sorption skid<span class="tag">pontoon.html</span></div>
+      <div class="desc">Pilot on a moored pontoon — moon-pool seawater intake, self-cleaning strainers on a bypass, valve manifold feeding four radial columns on its own tap lines. Sorption is the only duty afloat: seawater is the sole medium on deck, and no reagent cube ever comes aboard. Each column holds 20 kg (22 L) of sorbent at 9 m³/h, on a flat rigid frame anchored to the deck: the outlet leaves the bottom head straight into the collection header buried in that frame, so nothing pipes to the underside of a vessel. The feed drops on a flexible hose ending in a GF Quick Connect Valve 700 coupling. A 3 m knuckle-boom loader on the pier swaps loaded beds for regenerated ones — desorption happens ashore.</div>
+    </a></li>
+    <li><a class="card" href="demo.html">
+      <div class="name">Demo plant<span class="tag">demo.html</span></div>
+      <div class="desc">Reference scene exercising the full archetype library.</div>
+    </a></li>
+  </ul>
+  <footer>Built from <code>igorkant/plant_visual</code>.</footer>
+</main>
+</body>
+</html>
