@@ -29024,17 +29024,17 @@ function makePressureMeter(params) {
   return { mesh: group, tick: tick };
 }
 
-// Quick coupling: Georg Fischer Quick Connect Valve 700 (QC7), the DN25 / 1" pair.
+// Quick coupling: Banjo Dry-Mate PP 2" dry-disconnect (38 mm bore), DM200A / DM200D.
 //
-// Not a generic "quick connect": the QC7 is TWO full-bore ball valves bolted
-// nose to nose, each with its own lever, held together by a patented interlock
-// that only releases when both levers are shut. That is why it can replace a
+// Not a generic "quick connect": the Dry-Mate is TWO ball valves nose to nose,
+// each with its own lever, held together by cam arms that are locked while
+// either ball is open. That is why it can replace a
 // bolted flange on a live header — the column comes off without draining the
 // line — and why the geometry below is a mirrored pair rather than one body.
-// Proportions follow the datasheet: pair 192 mm long over a 70 mm body (L/D
-// 2.74), so `size` scales a real coupling rather than an invented one. The
-// coloured clips are the vendor's own line marking, blue for supply and red for
-// return. Static: nothing on it moves by itself, a fitter moves it.
+// Proportions were taken from the GF QC7 datasheet (pair 192 mm long over a
+// 70 mm body, L/D 2.74) and kept for the Dry-Mate, which has the same mirrored
+// double-ball layout; `size` scales it. The coloured bands are our line
+// marking, blue for supply and red for return. Static: nothing on it moves by itself, a fitter moves it.
 function makeQuickConnect(params) {
   params = params || {};
   var size = params.size || 1.0;
@@ -29241,7 +29241,7 @@ function buildPiping(scene, spec, registry) {
     pressure: "Pressure transmitter", ec: "Conductivity analyser (EC)",
     ph: "pH analyser", filter: "Filter",
     handvalve: "Manual regulating valve", fitting: "Flanged joint",
-    quickconnect: "Quick coupling (GF QC7)", sampler: "Sample point"
+    quickconnect: "Dry-disconnect coupling (Banjo Dry-Mate)", sampler: "Sample point"
   };
   function fmtVal(v) {
     return (v === undefined || v === null || isNaN(v)) ? "—"
@@ -29269,11 +29269,11 @@ function buildPiping(scene, spec, registry) {
     }
     else if (lc.type === "fitting") lines.push("Bolted flange pair — hookup joint");
     else if (lc.type === "quickconnect") {
-      lines.push("GF <b>Quick Connect Valve 700</b>, DN25 / 1\"");
-      lines.push("Two full-bore ball valves, levers <b>" +
+      lines.push("Banjo <b>Dry-Mate PP</b> 2\", 38 mm bore");
+      lines.push("Two ball valves, levers <b>" +
                  ((lc.open === false) ? "shut" : "open") + "</b>");
       lines.push("Interlocked — parts only with both levers shut, header stays live");
-      lines.push("Clip: <b>" + ((lc.clip === "return") ? "red, return" : "blue, supply") + "</b>");
+      lines.push("Band: <b>" + ((lc.clip === "return") ? "red, return" : "blue, supply") + "</b>");
     }
     else if (lc.type === "sampler") {
       // on a lead-lag pair a column outlet is "after lead" in one half of the
@@ -32162,7 +32162,7 @@ var PID_COMPONENTS = {
     g.appendChild(el("line", { x1: -7, y1: -13, x2: 7, y2: -13, stroke: "#cdd6e0", "stroke-width": 2 }));
     g.appendChild(el("circle", { cx: 0, cy: -13, r: 2.5, fill: "#cdd6e0" }));
   },
-  // Quick coupling (GF QC7): two ball valves back to back with the break between
+  // Quick coupling (Banjo Dry-Mate 2"): two ball valves back to back with the break between
   // them. Unlike `fitting` this one DOES earn a P&ID mark — it is double block
   // AND the point the column parts from the header — so it is drawn as two
   // bowties either side of the dashed separation line, kept small because eight

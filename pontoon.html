@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Floating Sorption Skid — 4-Column Pontoon Pilot, 32 m³/h</title>
+<title>Floating Sorption Skid — 4-Column Pontoon Pilot, 41 m³/h</title>
 <style>
   html, body { margin: 0; height: 100%; overflow: hidden; background: #10141a; font-family: sans-serif; }
   canvas { display: block; }
@@ -2438,7 +2438,7 @@ var PLANT_SPEC = {
     {
       "id": "P-101",
       "instanceable": false,
-      "label": "Seawater lift pump P-101",
+      "label": "Brine lift pump P-101",
       "nozzles": [],
       "params": {
         "baseColor": 3359061,
@@ -2476,9 +2476,9 @@ var PLANT_SPEC = {
         "canRadius": 0.2,
         "color": 1777187,
         "elementColor": 9082790,
-        "micron1": 100.0,
-        "micron2": 20.0,
-        "micron3": 3.0,
+        "micron1": 10.0,
+        "micron2": 1.0,
+        "micron3": 0.1,
         "pditLabel": "\u0394P across the filter \u2014 starts the backwash",
         "pditTag": "PDIT-01",
         "selfCleaning": true,
@@ -2715,7 +2715,7 @@ var PLANT_SPEC = {
       "size": 1.0,
       "type": "flowmeter",
       "unit": "m\u00b3/h",
-      "value": 32.0
+      "value": 41.4
     },
     {
       "color": 9807270,
@@ -2934,7 +2934,7 @@ var PLANT_SPEC = {
   ],
   "plant": {
     "id": "pontoon",
-    "name": "Floating Sorption Skid \u2014 4-Column Pontoon Pilot, 32 m\u00b3/h",
+    "name": "Floating Sorption Skid \u2014 4-Column Pontoon Pilot, 41 m\u00b3/h",
     "pipeRadius": 0.08
   },
   "schemaVersion": "0.1",
@@ -3062,7 +3062,7 @@ var PLANT_SPEC = {
           "id": "sorption",
           "label": "SORPTION",
           "lamp": "green",
-          "note": "70 min at 32 m\u00b3/h \u00b7 9 m\u00b3/h per column, ~410 BV/h \u00b7 brine at 25 ppm Li \u00b7 85 % captured (0.68 kg Li/h onto the beds) \u00b7 cycle called on volume, confirmed by sampling \u00b7 the only duty that runs afloat",
+          "note": "55 min at 41.4 m\u00b3/h \u00b7 10.3 m\u00b3/h per column, 470 BV/h \u00b7 brine at 25 ppm Li \u00b7 85 % captured (0.88 kg Li/h onto the beds) \u00b7 cycle called on volume, confirmed by sampling \u00b7 the only duty that runs afloat",
           "reverseConnections": [],
           "valves": {
             "XV-04": "open",
@@ -3123,7 +3123,7 @@ var PLANT_SPEC = {
           "id": "changeout",
           "label": "COLUMN CHANGE-OUT",
           "lamp": "red",
-          "note": "beds loaded to ~10 g Li/kg \u2014 0.8 kg Li on 80 kg of sorbent \u00b7 P-101 stopped, both QC7 couplings on each column shut and parted by hand \u2014 the feed hose is simply laid aside, nothing rigid is broken \u00b7 the pier's 3 m knuckle boom takes each column on a two-hook spreader by both lifting lugs and swaps all four for regenerated ones, over the trestle to the shore \u2014 desorption, rinsing and eluate handling happen ashore, not on this deck",
+          "note": "beds loaded to ~10 g Li/kg \u2014 0.8 kg Li on 80 kg of sorbent \u00b7 P-101 stopped, both Dry-Mate couplings on each column shut and parted by hand \u2014 the feed hose is simply laid aside, nothing rigid is broken \u00b7 the pier's 3 m knuckle boom takes each column on a two-hook spreader by both lifting lugs and swaps all four for regenerated ones, over the trestle to the shore \u2014 desorption, rinsing and eluate handling happen ashore, not on this deck",
           "reverseConnections": [],
           "valves": {
             "XV-04": "closed",
@@ -3147,7 +3147,7 @@ var PLANT_SPEC = {
             {
               "color": null,
               "key": "RC",
-              "text": "Radial sorption column, \u23000.44 \u00d7 1.6 m, 22 L (20 kg) of bed, 9 m\u00b3/h"
+              "text": "Radial sorption column, 22 L (20 kg) of bed, 10.3 m\u00b3/h (470 BV/h)"
             },
             {
               "color": null,
@@ -3157,7 +3157,7 @@ var PLANT_SPEC = {
             {
               "color": null,
               "key": "CF",
-              "text": "Three-stage self-cleaning strainer, 100 / 20 / 3 \u00b5m \u2014 backwash manifold overboard, backwash started on \u0394P"
+              "text": "Filtration stages 10 / 1 / 0.1 \u00b5m, cleaned or changed on \u0394P \u2014 flush manifold overboard"
             },
             {
               "color": null,
@@ -3167,7 +3167,7 @@ var PLANT_SPEC = {
             {
               "color": null,
               "key": "P",
-              "text": "Pump \u2014 P-101, the single seawater lift that drives the whole skid"
+              "text": "Pump \u2014 P-101, the single brine lift that drives the whole skid"
             },
             {
               "color": null,
@@ -3202,7 +3202,7 @@ var PLANT_SPEC = {
             {
               "color": null,
               "key": "FT",
-              "text": "Flow transmitter \u2014 feed 32 m\u00b3/h across the four columns; its totaliser is the breakthrough clock, since 25 ppm of lithium is invisible to conductivity in seawater"
+              "text": "Flow transmitter \u2014 feed 41.4 m\u00b3/h across the four columns; its totaliser is the breakthrough clock, since 25 ppm of lithium is invisible to conductivity in Dead Sea brine"
             },
             {
               "color": null,
@@ -3227,7 +3227,7 @@ var PLANT_SPEC = {
             {
               "color": null,
               "key": "QC",
-              "text": "GF Quick Connect Valve 700 (DN25) at both nozzles of every column \u2014 twin ball valves with an interlock, so a column parts from a live header; blue clip = feed, red = outlet"
+              "text": "Banjo Dry-Mate PP 2\" dry-disconnect (38 mm bore) at both nozzles of every column \u2014 twin ball valves with an interlock, so a column parts from a live header; blue band = feed, red = outlet"
             }
           ],
           "title": "Instruments"
@@ -3237,7 +3237,7 @@ var PLANT_SPEC = {
             {
               "color": 3050887,
               "key": "brine",
-              "text": "Raw and spent seawater brine, 25 ppm Li \u2014 the only medium on board"
+              "text": "Raw and spent Dead Sea brine, 25 ppm Li \u2014 the only medium on board"
             }
           ],
           "title": "Media"
@@ -3247,7 +3247,7 @@ var PLANT_SPEC = {
             {
               "color": null,
               "key": "1",
-              "text": "Sorption \u2014 70 min, 38 m\u00b3 of brine offered, 85 % of the lithium captured"
+              "text": "Sorption \u2014 55 min, 38 m\u00b3 of brine offered, 85 % of the lithium captured"
             },
             {
               "color": null,
@@ -3257,7 +3257,7 @@ var PLANT_SPEC = {
             {
               "color": null,
               "key": "3",
-              "text": "Column change-out \u2014 QC7 couplings shut and parted by hand, loaded beds craned ashore on the 3 m knuckle boom; ~0.8 kg Li (\u22484.3 kg LCE) leaves inside the sorbent"
+              "text": "Column change-out \u2014 Dry-Mate couplings shut and parted by hand, loaded beds craned ashore on the 3 m knuckle boom; ~0.8 kg Li (\u22484.3 kg LCE) leaves inside the sorbent"
             },
             {
               "color": null,
@@ -3273,19 +3273,19 @@ var PLANT_SPEC = {
     "pid": null,
     "popups": [
       {
-        "body": "Square platform <b>5.8 \u00d7 5.8 m</b> \u2014 <b>34 m\u00b2</b> of deck \u2014 on two buoyancy tanks, deck <b>0.9 m</b> above the waterline, guard rails all round.<br>Centre of the deck is a <b>moon pool</b>: a screened caisson through the hull with a bottom strainer, ending in the flanged riser that feeds P-101 \u2014 the intake is tapped straight through the bottom, so the skid draws its own feed wherever it is moored.<br><b>Sorption only.</b> Nothing but seawater is ever on this deck \u2014 no acid, no eluate, no reagent cubes. The overboard funnels take back exactly what came out of the sea: <b>lithium-depleted brine and strainer backwash</b>.<br>When the beds are loaded the columns themselves go ashore: both hookups are quick couplings, so a column is uncoupled by hand and the pier's knuckle-boom crane lifts it off \u2014 desorption, rinsing and product handling all happen on land.<br>Mooring is <b>lines to the pier bollards</b> \u2014 the platform is warped in by hand and held on its fenders for a change-out; there is no winch on deck.",
+        "body": "Square platform <b>5.8 \u00d7 5.8 m</b> \u2014 <b>34 m\u00b2</b> of deck \u2014 on two buoyancy tanks, deck <b>0.9 m</b> above the waterline, guard rails all round.<br>Centre of the deck is a <b>moon pool</b>: a screened caisson through the hull with a bottom strainer, ending in the flanged riser that feeds P-101 \u2014 the intake is tapped straight through the bottom, so the skid draws its own feed wherever it is moored.<br><b>Sorption only.</b> Nothing but Dead Sea brine is ever on this deck \u2014 no acid, no eluate, no reagent cubes. The overboard funnels take back exactly what came out of the lake: <b>lithium-depleted brine and strainer backwash</b>.<br>When the beds are loaded the columns themselves go ashore: both hookups are quick couplings, so a column is uncoupled by hand and the pier's knuckle-boom crane lifts it off \u2014 desorption, rinsing and product handling all happen on land.<br>Mooring is <b>lines to the pier bollards</b> \u2014 the platform is warped in by hand and held on its fenders for a change-out; there is no winch on deck.",
         "equipmentId": "PON-1",
         "status": "draft",
         "title": "Floating pontoon PON-1"
       },
       {
-        "body": "Duty <b>32 m\u00b3/h</b> at <b>2.6 bar</b>, flooded suction from the moon-pool riser.<br>Feeds the whole skid: <b>9 m\u00b3/h per column</b> across the four columns in parallel.<br>Wetted parts in duplex steel \u2014 the feed is raw brine at ~62 mS/cm.",
+        "body": "Duty <b>41.4 m\u00b3/h</b> at <b>2.6 bar</b>, flooded suction from the moon-pool riser.<br>Feeds the whole skid: <b>10.3 m\u00b3/h per column</b> (470 BV/h on a 22 L bed) across the four columns in parallel.<br>Wetted parts non-metallic (PP / PVDF / PE-UHMW) or C-276 / Ti Gr.7 \u2014 no stainless or duplex steel in Dead Sea brine (Cl ~ 215 g/L).",
         "equipmentId": "P-101",
         "status": "draft",
-        "title": "Seawater lift pump P-101"
+        "title": "Brine lift pump P-101"
       },
       {
-        "body": "Three self-cleaning stages in series, <b>100 / 20 / 3 \u00b5m</b>, removing sand, shell fragments and algae before the sorbent bed.<br><b>Backwash is pressure-driven automation:</b> PT-01 upstream and PT-02 downstream read the two sides and <b>PDIT-01</b> on the frame reads the difference \u2014 \u0394P across the filter \u2014 starts the backwash. At <b>\u0394P &gt; 0.8 bar</b> the controller on the frame flushes the housings one at a time, each through its own actuated backwash valve into the backwash manifold behind the frame, and the PLC opens <b>XV-BW</b> so the flush runs overboard through tee TE-03 and funnel overboardA.<br>Sorption never stops \u2014 the other two housings keep filtering while one is flushed, so the feed stays on the strainer.<br>Hand valves <b>HV-F1</b> / <b>HV-F2</b> isolate the skid; the bypass on tees <b>TE-01</b> / <b>TE-02</b>, with hand valve <b>HV-BP</b>, carries the feed round the strainer and its valves \u2014 normally closed, maintenance only.",
+        "body": "Three filtration stages in series, <b>10 / 1 / 0.1 \u00b5m</b>, cleaned or changed on \u0394P, removing sand, shell fragments and algae before the sorbent bed.<br><b>Cleaning is pressure-driven:</b> PT-01 upstream and PT-02 downstream read the two sides and <b>PDIT-01</b> on the frame reads the difference \u2014 \u0394P across the filter. At <b>\u0394P &gt; 0.8 bar</b> the housings are cleaned or their elements changed one at a time; a flush leaves each housing through its own valve into the manifold behind the frame, and the PLC opens <b>XV-BW</b> so it runs overboard through tee TE-03 and funnel overboardA.<br>Sorption never stops \u2014 the other two housings keep filtering while one is serviced, so the feed stays on the filter.<br>Hand valves <b>HV-F1</b> / <b>HV-F2</b> isolate the skid; the bypass on tees <b>TE-01</b> / <b>TE-02</b>, with hand valve <b>HV-BP</b>, carries the feed round the strainer and its valves \u2014 normally closed, maintenance only.",
         "equipmentId": "CF-101",
         "status": "draft",
         "title": "Strainer skid CF-101"
@@ -3303,37 +3303,37 @@ var PLANT_SPEC = {
         "title": "Column frame FR-B"
       },
       {
-        "body": "Two headers, <b>4 automated ball valves per header</b>, one pair per column, <b>9 m\u00b3/h</b> through each.<br>The taps stand at <b>x = \u00b10.7 m</b> and the four columns stand on the same two lines, so every tie-in is a straight run: the feed leaves a top tap, crosses the bridge at <b>5.4 m</b> and drops on the column axis; the outlet line drops on the same axis from the bottom head, turns under the frame bed and runs level back to the lower header, so nothing crosses the deck and nothing has to be sprung apart to lift a vessel.<br>Every column hookup is <b>demountable, not welded</b>: a flanged joint off the tap, a hand-set valve (HV) on the rigid run, and at the column end a <b>GF Quick Connect Valve 700</b> on a <b>flexible hose</b> \u2014 so a column comes off in seconds without cutting pipe or draining the header.<br>Upper header distributes the feed downflow, lower header collects the depleted brine and sends it over the side \u2014 <b>one direction, one duty</b>: there is no eluent on this skid to run counter-current.<br>Actuator position and limit-switch lamps show which tier is live.",
+        "body": "Two headers, <b>4 automated ball valves per header</b>, one pair per column, <b>10.3 m\u00b3/h</b> through each.<br>The taps stand at <b>x = \u00b10.7 m</b> and the four columns stand on the same two lines, so every tie-in is a straight run: the feed leaves a top tap, crosses the bridge at <b>5.4 m</b> and drops on the column axis; the outlet line drops on the same axis from the bottom head, turns under the frame bed and runs level back to the lower header, so nothing crosses the deck and nothing has to be sprung apart to lift a vessel.<br>Every column hookup is <b>demountable, not welded</b>: a flanged joint off the tap, a hand-set valve (HV) on the rigid run, and at the column end a <b>Banjo Dry-Mate PP 2\" dry-disconnect</b> on a <b>flexible hose</b> \u2014 so a column comes off in seconds without cutting pipe or draining the header.<br>Upper header distributes the feed downflow, lower header collects the depleted brine and sends it over the side \u2014 <b>one direction, one duty</b>: there is no eluent on this skid to run counter-current.<br>Actuator position and limit-switch lamps show which tier is live.",
         "equipmentId": "VM-101",
         "status": "draft",
         "title": "Valve manifold VM-101"
       },
       {
-        "body": "Radial-flow column <b>\u23000.44 \u00d7 1.6 m</b> holding a bed of <b>22 L</b> (<b>20 kg</b> of sorbent) around a central collector.<br>The column is <b>bolted down to the frame</b>, not to the deck: it stands on a machined pad with four studs, one column per pad.<br>Two <b>lifting lugs</b> are welded to the shell under the top flange. Each is a plate with an <b>open hole</b> for a shackle pin, and the two sit on opposite sides of the shell. They are what the pier crane hooks: its <b>two-hook spreader beam</b> is set to that same pitch, so shackle both, shut the two couplings, and the loaded vessel goes ashore plumb on its own pick points \u2014 no slinging round the shell.<br>Feed enters on the axis at the top through a hose. Treated brine leaves through the <b>bottom head, on the axis</b>, and drops into its own <b>outlet pipe</b>: down through the seat in the frame bed, along under the bed clear of the steel, and out to the lower header of VM-101 \u2014 from there the depleted brine goes <b>over the side</b> through the deck funnel. The run is visible for its whole length, so the path off each column can be followed by eye.<br>Both joints at the column are <b>GF Quick Connect Valve 700</b> couplings (QC7, DN25 / 1\") \u2014 one on the feed hose at the top, one on the outlet pipe just under the bottom head: two full-bore ball valves nose to nose with a patented interlock, so the halves only part once both levers are shut. That is what lets a loaded column be taken off a <b>live header</b> \u2014 shut both levers, pull the four slides, lift. Blue clips mark the feed couplings, red the collection side, straight off the vendor's colour code. The coupling is the vendor's <b>1\" size</b> and is picked on flow coefficient (Kv 570 l/min \u2248 34 m\u00b3/h) rather than on velocity \u2014 at <b>9 m\u00b3/h</b> the bore runs about <b>5 m/s</b>, brisk for a hand-parted joint.<br>The line reaches the column in two halves. Up to the frame it is <b>rigid pipe</b>, clamped to the portal beam and to the frame shelf, carrying the hand-set regulating valve (HV-T* trims the split between the four columns). The last metre is a <b>flexible hose</b> ending in the coupling, so nothing rigid has to be sprung apart when the column is lifted, and a floating deck's working never lands on a vessel flange. Isolation is the coupling's own job, so the outlet lines need no separate valve.<br>Duty <b>9 m\u00b3/h</b> \u2248 <b>410 BV/h</b>, downflow through the annulus and out at the core \u2014 a small bed worked hard, which is what a fast-kinetics sorbent is for.<br>Four columns run in parallel: <b>88 L</b> (<b>80 kg</b>) of sorbent on the skid.<br><b>The column is the transport package:</b> once the bed reaches ~10 g Li/kg both QC7 couplings are shut and parted by hand, the pier crane lifts it ashore and a regenerated one takes its place \u2014 desorption never happens afloat.",
+        "body": "Radial-flow column holding a bed of <b>22 L</b> (<b>20 kg</b> of sorbent) around a central collector.<br>The column is <b>bolted down to the frame</b>, not to the deck: it stands on a machined pad with four studs, one column per pad.<br>Two <b>lifting lugs</b> are welded to the shell under the top flange. Each is a plate with an <b>open hole</b> for a shackle pin, and the two sit on opposite sides of the shell. They are what the pier crane hooks: its <b>two-hook spreader beam</b> is set to that same pitch, so shackle both, shut the two couplings, and the loaded vessel goes ashore plumb on its own pick points \u2014 no slinging round the shell.<br>Feed enters on the axis at the top through a hose. Treated brine leaves through the <b>bottom head, on the axis</b>, and drops into its own <b>outlet pipe</b>: down through the seat in the frame bed, along under the bed clear of the steel, and out to the lower header of VM-101 \u2014 from there the depleted brine goes <b>over the side</b> through the deck funnel. The run is visible for its whole length, so the path off each column can be followed by eye.<br>Both joints at the column are <b>Banjo Dry-Mate PP 2\"</b> dry-disconnect couplings (DM200A on the pressure side, DM200D on the hose) \u2014 one on the feed hose at the top, one on the outlet pipe just under the bottom head. Body glass-filled polypropylene, a PTFE ball in each half, FKM seals; the halves only part once both ball valves are shut, and about 2 ml is lost on parting. That is what lets a loaded column be taken off a <b>live header</b> \u2014 shut both levers, open the cam arms, lift. Blue bands mark the feed couplings, red the collection side. The bore is a clear <b>38 mm</b>, so at <b>10.3 m\u00b3/h</b> it runs about <b>2.5 m/s</b>; rating 7 bar at 21 \u00b0C, 5 bar at 66 \u00b0C, against 2.6 bar on the skid.<br>The line reaches the column in two halves. Up to the frame it is <b>rigid pipe</b>, clamped to the portal beam and to the frame shelf, carrying the hand-set regulating valve (HV-T* trims the split between the four columns). The last metre is a <b>flexible hose</b> ending in the coupling, so nothing rigid has to be sprung apart when the column is lifted, and a floating deck's working never lands on a vessel flange. Isolation is the coupling's own job, so the outlet lines need no separate valve.<br>Duty <b>10.3 m\u00b3/h</b> = <b>470 BV/h</b>, downflow through the annulus and out at the core \u2014 a small bed worked hard, which is what a fast-kinetics sorbent is for.<br>Four columns run in parallel: <b>88 L</b> (<b>80 kg</b>) of sorbent on the skid.<br><b>The column is the transport package:</b> once the bed reaches ~10 g Li/kg both Dry-Mate couplings are shut and parted by hand, the pier crane lifts it ashore and a regenerated one takes its place \u2014 desorption never happens afloat.",
         "equipmentId": "RC-1",
         "status": "draft",
         "title": "Sorption column RC-1"
       },
       {
-        "body": "Second of four parallel radial columns; identical duty to RC-1 \u2014 <b>9 m\u00b3/h</b> through <b>22 L</b> of bed.<br>All four are valved individually, so a single column can be taken off line for a media change without stopping the skid.",
+        "body": "Second of four parallel radial columns; identical duty to RC-1 \u2014 <b>10.3 m\u00b3/h</b> through <b>22 L</b> of bed.<br>All four are valved individually, so a single column can be taken off line for a media change without stopping the skid.",
         "equipmentId": "RC-2",
         "status": "draft",
         "title": "Sorption column RC-2"
       },
       {
-        "body": "Third of four parallel radial columns, fed from the upper header tap top3.<br><b>9 m\u00b3/h</b>, bed <b>22 L</b> (20 kg), loading tracked by the cycle counter.",
+        "body": "Third of four parallel radial columns, fed from the upper header tap top3.<br><b>10.3 m\u00b3/h</b>, bed <b>22 L</b> (20 kg), loading tracked by the cycle counter.",
         "equipmentId": "RC-3",
         "status": "draft",
         "title": "Sorption column RC-3"
       },
       {
-        "body": "Fourth of four parallel radial columns, fed from tap top4.<br><b>9 m\u00b3/h</b>, bed <b>22 L</b> (20 kg); loaded brine leaves at the core and is collected by the lower header.",
+        "body": "Fourth of four parallel radial columns, fed from tap top4.<br><b>10.3 m\u00b3/h</b>, bed <b>22 L</b> (20 kg); loaded brine leaves at the core and is collected by the lower header.",
         "equipmentId": "RC-4",
         "status": "draft",
         "title": "Sorption column RC-4"
       },
       {
-        "body": "Sequence control for the sorption duty: manifold valve steps, strainer differential-pressure backwash and the P-101 start/stop interlocks.<br>Breakthrough is watched on <b>throughput, not on an instrument</b>. Conductivity would be useless here: the brine runs at ~62 mS/cm of salt and the lithium it carries is <b>25 ppm</b>, so a loaded bed moves the reading by nothing a transmitter could resolve. The PLC counts <b>volume through FT-01</b> against the beds\u2019 known capacity \u2014 <b>38 m\u00b3, about 70 min</b> \u2014 and calls the change-out on that.<br>The number itself is confirmed off line: a <b>grab sample</b> is taken from the overboard line at every swap and run ashore, and the sampled lithium is what trims the cycle length for the next batch.",
+        "body": "Sequence control for the sorption duty: manifold valve steps, strainer differential-pressure backwash and the P-101 start/stop interlocks.<br>Breakthrough is watched on <b>throughput, not on an instrument</b>. Conductivity would be useless here: the brine carries ~330 g/L of salt and only <b>25 ppm</b> of lithium, so a loaded bed moves the reading by nothing a transmitter could resolve. The PLC counts <b>volume through FT-01</b> against the beds\u2019 known capacity \u2014 <b>38 m\u00b3, about 55 min</b> \u2014 and calls the change-out on that.<br>The number itself is confirmed off line: a <b>grab sample</b> is taken from the overboard line at every swap and run ashore, and the sampled lithium is what trims the cycle length for the next batch.",
         "equipmentId": "PLC-101",
         "status": "draft",
         "title": "Control cabinet PLC-101"
@@ -13068,17 +13068,17 @@ function makePressureMeter(params) {
   return { mesh: group, tick: tick };
 }
 
-// Quick coupling: Georg Fischer Quick Connect Valve 700 (QC7), the DN25 / 1" pair.
+// Quick coupling: Banjo Dry-Mate PP 2" dry-disconnect (38 mm bore), DM200A / DM200D.
 //
-// Not a generic "quick connect": the QC7 is TWO full-bore ball valves bolted
-// nose to nose, each with its own lever, held together by a patented interlock
-// that only releases when both levers are shut. That is why it can replace a
+// Not a generic "quick connect": the Dry-Mate is TWO ball valves nose to nose,
+// each with its own lever, held together by cam arms that are locked while
+// either ball is open. That is why it can replace a
 // bolted flange on a live header — the column comes off without draining the
 // line — and why the geometry below is a mirrored pair rather than one body.
-// Proportions follow the datasheet: pair 192 mm long over a 70 mm body (L/D
-// 2.74), so `size` scales a real coupling rather than an invented one. The
-// coloured clips are the vendor's own line marking, blue for supply and red for
-// return. Static: nothing on it moves by itself, a fitter moves it.
+// Proportions were taken from the GF QC7 datasheet (pair 192 mm long over a
+// 70 mm body, L/D 2.74) and kept for the Dry-Mate, which has the same mirrored
+// double-ball layout; `size` scales it. The coloured bands are our line
+// marking, blue for supply and red for return. Static: nothing on it moves by itself, a fitter moves it.
 function makeQuickConnect(params) {
   params = params || {};
   var size = params.size || 1.0;
@@ -13285,7 +13285,7 @@ function buildPiping(scene, spec, registry) {
     pressure: "Pressure transmitter", ec: "Conductivity analyser (EC)",
     ph: "pH analyser", filter: "Filter",
     handvalve: "Manual regulating valve", fitting: "Flanged joint",
-    quickconnect: "Quick coupling (GF QC7)", sampler: "Sample point"
+    quickconnect: "Dry-disconnect coupling (Banjo Dry-Mate)", sampler: "Sample point"
   };
   function fmtVal(v) {
     return (v === undefined || v === null || isNaN(v)) ? "—"
@@ -13313,11 +13313,11 @@ function buildPiping(scene, spec, registry) {
     }
     else if (lc.type === "fitting") lines.push("Bolted flange pair — hookup joint");
     else if (lc.type === "quickconnect") {
-      lines.push("GF <b>Quick Connect Valve 700</b>, DN25 / 1\"");
-      lines.push("Two full-bore ball valves, levers <b>" +
+      lines.push("Banjo <b>Dry-Mate PP</b> 2\", 38 mm bore");
+      lines.push("Two ball valves, levers <b>" +
                  ((lc.open === false) ? "shut" : "open") + "</b>");
       lines.push("Interlocked — parts only with both levers shut, header stays live");
-      lines.push("Clip: <b>" + ((lc.clip === "return") ? "red, return" : "blue, supply") + "</b>");
+      lines.push("Band: <b>" + ((lc.clip === "return") ? "red, return" : "blue, supply") + "</b>");
     }
     else if (lc.type === "sampler") {
       // on a lead-lag pair a column outlet is "after lead" in one half of the
@@ -16206,7 +16206,7 @@ var PID_COMPONENTS = {
     g.appendChild(el("line", { x1: -7, y1: -13, x2: 7, y2: -13, stroke: "#cdd6e0", "stroke-width": 2 }));
     g.appendChild(el("circle", { cx: 0, cy: -13, r: 2.5, fill: "#cdd6e0" }));
   },
-  // Quick coupling (GF QC7): two ball valves back to back with the break between
+  // Quick coupling (Banjo Dry-Mate 2"): two ball valves back to back with the break between
   // them. Unlike `fitting` this one DOES earn a P&ID mark — it is double block
   // AND the point the column parts from the header — so it is drawn as two
   // bowties either side of the dashed separation line, kept small because eight
