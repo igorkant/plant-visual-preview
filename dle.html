@@ -13367,9 +13367,11 @@ function makeSkidFrame(params, nozzles) {
   var PR = (params.padRadius   !== undefined) ? params.padRadius   : 0.34;
   var steelColor = (params.steelColor !== undefined) ? params.steelColor : 0x5A626B;
   var padColor   = (params.padColor   !== undefined) ? params.padColor   : 0x8A9099;
+  // 0.75 reads as steel; an FRP frame (Dead Sea pontoon) sets it near 0
+  var frameMetal = (params.metalness  !== undefined) ? params.metalness  : 0.75;
 
   var group = new THREE.Group();
-  var steelMat = new THREE.MeshStandardMaterial({ color: steelColor, metalness: 0.75, roughness: 0.45 });
+  var steelMat = new THREE.MeshStandardMaterial({ color: steelColor, metalness: frameMetal, roughness: 0.45 });
   var padMat   = new THREE.MeshStandardMaterial({ color: padColor, metalness: 0.6, roughness: 0.5 });
 
   var HW = W / 2, HL = L / 2, topY = BH - B / 2;
