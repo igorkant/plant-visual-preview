@@ -2458,6 +2458,7 @@ var PLANT_SPEC = {
         "brineHeight": 2.1,
         "clampHeight": 1.5,
         "columnRadius": 0.095,
+        "crossovers": true,
         "eluateColor": 2212520,
         "eluateHeight": 0.85,
         "frameColor": 12107976,
@@ -2511,7 +2512,8 @@ var PLANT_SPEC = {
         "liftingLugs": 0,
         "maxBeads": 8000,
         "mergeParts": false,
-        "radius": 0.095
+        "radius": 0.095,
+        "solidBed": false
       },
       "position": [
         -1.2,
@@ -2544,7 +2546,8 @@ var PLANT_SPEC = {
         "liftingLugs": 0,
         "maxBeads": 8000,
         "mergeParts": false,
-        "radius": 0.095
+        "radius": 0.095,
+        "solidBed": false
       },
       "position": [
         -1.2,
@@ -2577,7 +2580,8 @@ var PLANT_SPEC = {
         "liftingLugs": 0,
         "maxBeads": 8000,
         "mergeParts": false,
-        "radius": 0.095
+        "radius": 0.095,
+        "solidBed": false
       },
       "position": [
         -0.6,
@@ -2610,7 +2614,8 @@ var PLANT_SPEC = {
         "liftingLugs": 0,
         "maxBeads": 8000,
         "mergeParts": false,
-        "radius": 0.095
+        "radius": 0.095,
+        "solidBed": false
       },
       "position": [
         -0.6,
@@ -2643,7 +2648,8 @@ var PLANT_SPEC = {
         "liftingLugs": 0,
         "maxBeads": 8000,
         "mergeParts": false,
-        "radius": 0.095
+        "radius": 0.095,
+        "solidBed": false
       },
       "position": [
         0.0,
@@ -2676,7 +2682,8 @@ var PLANT_SPEC = {
         "liftingLugs": 0,
         "maxBeads": 8000,
         "mergeParts": false,
-        "radius": 0.095
+        "radius": 0.095,
+        "solidBed": false
       },
       "position": [
         0.0,
@@ -2709,7 +2716,8 @@ var PLANT_SPEC = {
         "liftingLugs": 0,
         "maxBeads": 8000,
         "mergeParts": false,
-        "radius": 0.095
+        "radius": 0.095,
+        "solidBed": false
       },
       "position": [
         0.6,
@@ -2742,7 +2750,8 @@ var PLANT_SPEC = {
         "liftingLugs": 0,
         "maxBeads": 8000,
         "mergeParts": false,
-        "radius": 0.095
+        "radius": 0.095,
+        "solidBed": false
       },
       "position": [
         0.6,
@@ -2775,7 +2784,8 @@ var PLANT_SPEC = {
         "liftingLugs": 0,
         "maxBeads": 8000,
         "mergeParts": false,
-        "radius": 0.095
+        "radius": 0.095,
+        "solidBed": false
       },
       "position": [
         1.2,
@@ -2808,7 +2818,8 @@ var PLANT_SPEC = {
         "liftingLugs": 0,
         "maxBeads": 8000,
         "mergeParts": false,
-        "radius": 0.095
+        "radius": 0.095,
+        "solidBed": false
       },
       "position": [
         1.2,
@@ -3334,6 +3345,7 @@ var PLANT_SPEC = {
       "id": "AE-101",
       "jitter": 0.05,
       "position": 0.5,
+      "readout": true,
       "size": 0.441,
       "type": "ph",
       "unit": "pH \u00b7 setpoint TBC (\u22488\u20139, set on pilot)",
@@ -3897,6 +3909,7 @@ var PLANT_SPEC = {
         }
       ],
       "schedule": {
+        "regenText": "",
         "secondsPerHour": 4.0,
         "selected": 0,
         "steps": [
@@ -4915,7 +4928,7 @@ function scrollFlow(tex, dt, speed, axis) {
 // placement. Used by stirred_reactor.js (and future archetypes). The defaults
 // are embedded as a JSON string + JSON.parse so the Python contract test can
 // extract and compare them verbatim (single source of shape, two runtimes).
-var ARCHETYPE_NOZZLES = JSON.parse('{"stirred_reactor":[{"id":"feed","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"vent","mount":"top","height":0.5,"angle":180.0,"radial":0.6,"type":"vent"},{"id":"outlet","mount":"shell","height":0.15,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"jacketIn","mount":"shell","height":0.25,"angle":0.0,"radial":0.6,"type":"jacket"},{"id":"jacketOut","mount":"shell","height":0.75,"angle":0.0,"radial":0.6,"type":"jacket"}],"heat_exchanger":[{"id":"shellIn","mount":"shell","height":0.2,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"shellOut","mount":"shell","height":0.8,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"tubeIn","mount":"channelA","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"},{"id":"tubeOut","mount":"channelB","height":0.5,"angle":0.0,"radial":0.0,"type":"outlet"}],"flow_reactor":[{"id":"feedIn1","mount":"channelB","height":0.5,"angle":235.0,"radial":0.5,"type":"feed"},{"id":"feedIn2","mount":"channelB","height":0.5,"angle":305.0,"radial":0.5,"type":"feed"},{"id":"productOut","mount":"channelA","height":0.5,"angle":90.0,"radial":0.5,"type":"outlet"},{"id":"jacketIn","mount":"shell","height":0.5,"angle":340.0,"radial":0.6,"type":"jacket"},{"id":"jacketOut","mount":"shell","height":0.5,"angle":20.0,"radial":0.6,"type":"jacket"}],"chiller":[{"id":"supply","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"return","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"condenserIn","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"condenserOut","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"outlet"}],"separator":[{"id":"feedIn","mount":"shell","height":0.55,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"vaporOut","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"outlet"},{"id":"liquidOut","mount":"bottom","height":0.5,"angle":0.0,"radial":0.0,"type":"outlet"}],"nutsche_filter":[{"id":"slurryIn","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"},{"id":"filtrateOut","mount":"shell","height":0.1,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"vacuumOut","mount":"shell","height":0.18,"angle":180.0,"radial":0.6,"type":"vent"}],"thickener":[{"id":"feedIn","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"},{"id":"overflowOut","mount":"shell","height":0.95,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"underflowOut","mount":"bottom","height":0.5,"angle":0.0,"radial":0.0,"type":"outlet"}],"tank":[{"id":"inlet","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"inlet2","mount":"top","height":0.5,"angle":180.0,"radial":0.6,"type":"feed"},{"id":"inlet3","mount":"top","height":0.5,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"outlet","mount":"bottom","height":0.5,"angle":0.0,"radial":0.0,"type":"outlet"}],"vacuum_pump":[{"id":"suction","mount":"shell","height":0.5,"angle":0.0,"radial":0.6,"type":"vent"}],"decanter_centrifuge":[{"id":"feedIn","mount":"channelA","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"},{"id":"centrateOut","mount":"shell","height":0.85,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"solidsOut","mount":"shell","height":0.1,"angle":270.0,"radial":0.6,"type":"outlet"}],"disc_stack_separator":[{"id":"feedIn","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"},{"id":"clarifiedOut","mount":"top","height":0.5,"angle":0.0,"radial":0.55,"type":"outlet"},{"id":"solidsOut","mount":"bottom","height":0.5,"angle":0.0,"radial":0.0,"type":"outlet"}],"filter_press":[{"id":"slurryIn","mount":"channelA","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"},{"id":"washIn","mount":"channelA","height":0.5,"angle":90.0,"radial":0.55,"type":"feed"},{"id":"filtrateOut","mount":"shell","height":0.5,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"cakeOut","mount":"shell","height":0.85,"angle":90.0,"radial":0.6,"type":"outlet"}],"gas_cylinder_bundle":[{"id":"gasOut","mount":"shell","height":0.9,"angle":0.0,"radial":0.6,"type":"outlet"}],"ion_exchange_column":[{"id":"feedIn","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"},{"id":"treatedOut","mount":"bottom","height":0.5,"angle":0.0,"radial":0.0,"type":"outlet"},{"id":"regenIn","mount":"shell","height":0.85,"angle":90.0,"radial":0.6,"type":"feed"}],"reverse_osmosis":[{"id":"feedIn","mount":"shell","height":0.2,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"permeateOut","mount":"shell","height":0.5,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"concentrateOut","mount":"shell","height":0.85,"angle":90.0,"radial":0.6,"type":"outlet"}],"steam_generator":[{"id":"steamOut","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"condReturn","mount":"shell","height":0.6,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"feedwaterIn","mount":"shell","height":0.2,"angle":270.0,"radial":0.6,"type":"feed"}],"paddle_dryer":[{"id":"feedIn","mount":"shell","height":0.25,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"powderOut","mount":"shell","height":0.75,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"vaporOut","mount":"shell","height":0.55,"angle":90.0,"radial":0.6,"type":"vent"},{"id":"jacketIn","mount":"shell","height":0.3,"angle":0.0,"radial":0.6,"type":"jacket"},{"id":"jacketOut","mount":"shell","height":0.7,"angle":0.0,"radial":0.6,"type":"jacket"}],"radial_column":[{"id":"feedIn","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"},{"id":"eluateOut","mount":"bottom","height":0.5,"angle":0.0,"radial":0.0,"type":"outlet"}],"ibc_container":[{"id":"fillTop","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"},{"id":"valveOut","mount":"shell","height":0.12,"angle":270.0,"radial":0.6,"type":"outlet"}],"cooling_tower":[{"id":"hotWaterIn","mount":"shell","height":0.8,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"coldWaterOut","mount":"shell","height":0.08,"angle":180.0,"radial":0.6,"type":"outlet"},{"id":"makeupIn","mount":"shell","height":0.15,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"blowdownOut","mount":"shell","height":0.02,"angle":270.0,"radial":0.6,"type":"outlet"}],"centrifugal_pump":[{"id":"suctionIn","mount":"shell","height":0.5,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"dischargeOut","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"outlet"}],"coarse_filter":[{"id":"inlet","mount":"shell","height":0.5,"angle":180.0,"radial":0.6,"type":"feed"},{"id":"outlet","mount":"shell","height":0.5,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"drainOut","mount":"bottom","height":0.5,"angle":0.0,"radial":0.0,"type":"outlet"}],"silo":[{"id":"fillTop","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"},{"id":"reagentOut","mount":"bottom","height":0.5,"angle":0.0,"radial":0.0,"type":"outlet"}],"dissolving_reactor":[{"id":"reagentIn","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"},{"id":"waterIn","mount":"top","height":0.5,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"solutionOut","mount":"shell","height":0.12,"angle":0.0,"radial":0.6,"type":"outlet"}],"conveyor_furnace":[{"id":"feedIn","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"},{"id":"productOut","mount":"bottom","height":0.5,"angle":0.0,"radial":0.0,"type":"outlet"},{"id":"vaporOut","mount":"top","height":0.5,"angle":180.0,"radial":0.0,"type":"vent"}],"belt_conveyor":[{"id":"feedIn","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"},{"id":"dischargeOut","mount":"top","height":0.5,"angle":180.0,"radial":0.0,"type":"outlet"}],"vibro_screen":[{"id":"feedIn","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"},{"id":"oversizeOut","mount":"shell","height":0.72,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"finesOut","mount":"shell","height":0.38,"angle":180.0,"radial":0.6,"type":"outlet"}],"box_bin":[{"id":"inlet","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"}],"bipolar_ed":[{"id":"feedIn","mount":"shell","height":0.2,"angle":180.0,"radial":0.6,"type":"feed"},{"id":"acidOut","mount":"shell","height":0.5,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"baseOut","mount":"shell","height":0.5,"angle":270.0,"radial":0.6,"type":"outlet"}],"grinder":[{"id":"feedIn","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"},{"id":"productOut","mount":"bottom","height":0.5,"angle":0.0,"radial":0.0,"type":"outlet"}],"nitrogen_generator":[{"id":"airIn","mount":"shell","height":0.5,"angle":180.0,"radial":0.6,"type":"feed"},{"id":"nitrogenOut","mount":"shell","height":0.8,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"ventOut","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"vent"}],"pipe_tie_in":[{"id":"flangeOut","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"outlet"},{"id":"flangeIn","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"}],"pipe_header":[{"id":"inlet","mount":"shell","height":0.5,"angle":180.0,"radial":0.6,"type":"feed"},{"id":"outlet","mount":"shell","height":0.5,"angle":180.0,"radial":0.6,"type":"outlet"},{"id":"branch1","mount":"shell","height":0.5,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"branch2","mount":"shell","height":0.5,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"branch3","mount":"shell","height":0.5,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"branch4","mount":"shell","height":0.5,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"branch5","mount":"shell","height":0.5,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"branch6","mount":"shell","height":0.5,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"branch7","mount":"shell","height":0.5,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"branch8","mount":"shell","height":0.5,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"branch9","mount":"shell","height":0.5,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"branch10","mount":"shell","height":0.5,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"branch11","mount":"shell","height":0.5,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"branch12","mount":"shell","height":0.5,"angle":90.0,"radial":0.6,"type":"outlet"}],"pipe_tee":[{"id":"runIn","mount":"shell","height":0.5,"angle":180.0,"radial":0.6,"type":"feed"},{"id":"runOut","mount":"shell","height":0.5,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"branch","mount":"shell","height":0.5,"angle":90.0,"radial":0.6,"type":"outlet"}],"valve_manifold":[{"id":"topIn","mount":"shell","height":0.85,"angle":180.0,"radial":0.6,"type":"feed"},{"id":"topOut","mount":"shell","height":0.85,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"botIn","mount":"shell","height":0.12,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"botOut","mount":"shell","height":0.12,"angle":180.0,"radial":0.6,"type":"outlet"},{"id":"top1","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"top2","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"top3","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"top4","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"top5","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"top6","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"top7","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"top8","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"top9","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"top10","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"bot1","mount":"bottom","height":0.5,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"bot2","mount":"bottom","height":0.5,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"bot3","mount":"bottom","height":0.5,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"bot4","mount":"bottom","height":0.5,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"bot5","mount":"bottom","height":0.5,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"bot6","mount":"bottom","height":0.5,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"bot7","mount":"bottom","height":0.5,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"bot8","mount":"bottom","height":0.5,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"bot9","mount":"bottom","height":0.5,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"bot10","mount":"bottom","height":0.5,"angle":0.0,"radial":0.6,"type":"feed"}],"valve_station":[{"id":"brineIn","mount":"shell","height":0.85,"angle":180.0,"radial":0.6,"type":"feed"},{"id":"serviceIn","mount":"shell","height":0.7,"angle":180.0,"radial":0.6,"type":"feed"},{"id":"eluateOut","mount":"shell","height":0.35,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"wasteOut","mount":"shell","height":0.25,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"drainOut","mount":"shell","height":0.15,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"ch1Out","mount":"shell","height":0.6,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"ch2Out","mount":"shell","height":0.6,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"ch3Out","mount":"shell","height":0.6,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"ch4Out","mount":"shell","height":0.6,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"ch5Out","mount":"shell","height":0.6,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"ch6Out","mount":"shell","height":0.6,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"ch7Out","mount":"shell","height":0.6,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"ch8Out","mount":"shell","height":0.6,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"ch9Out","mount":"shell","height":0.6,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"ch10Out","mount":"shell","height":0.6,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"ch1In","mount":"shell","height":0.4,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"ch2In","mount":"shell","height":0.4,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"ch3In","mount":"shell","height":0.4,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"ch4In","mount":"shell","height":0.4,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"ch5In","mount":"shell","height":0.4,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"ch6In","mount":"shell","height":0.4,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"ch7In","mount":"shell","height":0.4,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"ch8In","mount":"shell","height":0.4,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"ch9In","mount":"shell","height":0.4,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"ch10In","mount":"shell","height":0.4,"angle":270.0,"radial":0.6,"type":"feed"}],"leadlag_station":[{"id":"brineIn","mount":"shell","height":0.9,"angle":180.0,"radial":0.6,"type":"feed"},{"id":"waterIn","mount":"shell","height":0.8,"angle":180.0,"radial":0.6,"type":"feed"},{"id":"acidIn","mount":"shell","height":0.7,"angle":180.0,"radial":0.6,"type":"feed"},{"id":"raffinateOut","mount":"shell","height":0.45,"angle":180.0,"radial":0.6,"type":"outlet"},{"id":"eluateOut","mount":"shell","height":0.35,"angle":180.0,"radial":0.6,"type":"outlet"},{"id":"wasteOut","mount":"shell","height":0.25,"angle":180.0,"radial":0.6,"type":"outlet"},{"id":"a1Out","mount":"shell","height":0.95,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"a1In","mount":"shell","height":0.1,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"b1Out","mount":"shell","height":0.95,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"b1In","mount":"shell","height":0.1,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"a2Out","mount":"shell","height":0.95,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"a2In","mount":"shell","height":0.1,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"b2Out","mount":"shell","height":0.95,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"b2In","mount":"shell","height":0.1,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"a3Out","mount":"shell","height":0.95,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"a3In","mount":"shell","height":0.1,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"b3Out","mount":"shell","height":0.95,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"b3In","mount":"shell","height":0.1,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"a4Out","mount":"shell","height":0.95,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"a4In","mount":"shell","height":0.1,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"b4Out","mount":"shell","height":0.95,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"b4In","mount":"shell","height":0.1,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"a5Out","mount":"shell","height":0.95,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"a5In","mount":"shell","height":0.1,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"b5Out","mount":"shell","height":0.95,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"b5In","mount":"shell","height":0.1,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"a6Out","mount":"shell","height":0.95,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"a6In","mount":"shell","height":0.1,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"b6Out","mount":"shell","height":0.95,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"b6In","mount":"shell","height":0.1,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"a7Out","mount":"shell","height":0.95,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"a7In","mount":"shell","height":0.1,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"b7Out","mount":"shell","height":0.95,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"b7In","mount":"shell","height":0.1,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"a8Out","mount":"shell","height":0.95,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"a8In","mount":"shell","height":0.1,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"b8Out","mount":"shell","height":0.95,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"b8In","mount":"shell","height":0.1,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"a9Out","mount":"shell","height":0.95,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"a9In","mount":"shell","height":0.1,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"b9Out","mount":"shell","height":0.95,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"b9In","mount":"shell","height":0.1,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"a10Out","mount":"shell","height":0.95,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"a10In","mount":"shell","height":0.1,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"b10Out","mount":"shell","height":0.95,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"b10In","mount":"shell","height":0.1,"angle":90.0,"radial":0.6,"type":"feed"}],"dosing_skid":[{"id":"lineIn","mount":"shell","height":0.35,"angle":180.0,"radial":0.6,"type":"feed"},{"id":"lineOut","mount":"shell","height":0.35,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"refillIn","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"}],"control_cabinet":[],"nmr_analyser":[{"id":"feedIn","mount":"shell","height":0.3,"angle":180.0,"radial":0.6,"type":"feed"},{"id":"feedOut","mount":"shell","height":0.3,"angle":0.0,"radial":0.6,"type":"outlet"}],"pontoon":[{"id":"seaSuction","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"outlet"},{"id":"overboardA","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"overboardB","mount":"top","height":0.5,"angle":180.0,"radial":0.6,"type":"feed"}],"pier":[],"skid_frame":[],"operator":[],"photo_panel":[]}');
+var ARCHETYPE_NOZZLES = JSON.parse('{"stirred_reactor":[{"id":"feed","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"vent","mount":"top","height":0.5,"angle":180.0,"radial":0.6,"type":"vent"},{"id":"outlet","mount":"shell","height":0.15,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"jacketIn","mount":"shell","height":0.25,"angle":0.0,"radial":0.6,"type":"jacket"},{"id":"jacketOut","mount":"shell","height":0.75,"angle":0.0,"radial":0.6,"type":"jacket"}],"heat_exchanger":[{"id":"shellIn","mount":"shell","height":0.2,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"shellOut","mount":"shell","height":0.8,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"tubeIn","mount":"channelA","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"},{"id":"tubeOut","mount":"channelB","height":0.5,"angle":0.0,"radial":0.0,"type":"outlet"}],"flow_reactor":[{"id":"feedIn1","mount":"channelB","height":0.5,"angle":235.0,"radial":0.5,"type":"feed"},{"id":"feedIn2","mount":"channelB","height":0.5,"angle":305.0,"radial":0.5,"type":"feed"},{"id":"productOut","mount":"channelA","height":0.5,"angle":90.0,"radial":0.5,"type":"outlet"},{"id":"jacketIn","mount":"shell","height":0.5,"angle":340.0,"radial":0.6,"type":"jacket"},{"id":"jacketOut","mount":"shell","height":0.5,"angle":20.0,"radial":0.6,"type":"jacket"}],"chiller":[{"id":"supply","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"return","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"condenserIn","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"condenserOut","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"outlet"}],"separator":[{"id":"feedIn","mount":"shell","height":0.55,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"vaporOut","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"outlet"},{"id":"liquidOut","mount":"bottom","height":0.5,"angle":0.0,"radial":0.0,"type":"outlet"}],"nutsche_filter":[{"id":"slurryIn","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"},{"id":"filtrateOut","mount":"shell","height":0.1,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"vacuumOut","mount":"shell","height":0.18,"angle":180.0,"radial":0.6,"type":"vent"}],"thickener":[{"id":"feedIn","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"},{"id":"overflowOut","mount":"shell","height":0.95,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"underflowOut","mount":"bottom","height":0.5,"angle":0.0,"radial":0.0,"type":"outlet"}],"tank":[{"id":"inlet","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"inlet2","mount":"top","height":0.5,"angle":180.0,"radial":0.6,"type":"feed"},{"id":"inlet3","mount":"top","height":0.5,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"outlet","mount":"bottom","height":0.5,"angle":0.0,"radial":0.0,"type":"outlet"}],"vacuum_pump":[{"id":"suction","mount":"shell","height":0.5,"angle":0.0,"radial":0.6,"type":"vent"}],"decanter_centrifuge":[{"id":"feedIn","mount":"channelA","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"},{"id":"centrateOut","mount":"shell","height":0.85,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"solidsOut","mount":"shell","height":0.1,"angle":270.0,"radial":0.6,"type":"outlet"}],"disc_stack_separator":[{"id":"feedIn","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"},{"id":"clarifiedOut","mount":"top","height":0.5,"angle":0.0,"radial":0.55,"type":"outlet"},{"id":"solidsOut","mount":"bottom","height":0.5,"angle":0.0,"radial":0.0,"type":"outlet"}],"filter_press":[{"id":"slurryIn","mount":"channelA","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"},{"id":"washIn","mount":"channelA","height":0.5,"angle":90.0,"radial":0.55,"type":"feed"},{"id":"filtrateOut","mount":"shell","height":0.5,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"cakeOut","mount":"shell","height":0.85,"angle":90.0,"radial":0.6,"type":"outlet"}],"gas_cylinder_bundle":[{"id":"gasOut","mount":"shell","height":0.9,"angle":0.0,"radial":0.6,"type":"outlet"}],"ion_exchange_column":[{"id":"feedIn","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"},{"id":"treatedOut","mount":"bottom","height":0.5,"angle":0.0,"radial":0.0,"type":"outlet"},{"id":"regenIn","mount":"shell","height":0.85,"angle":90.0,"radial":0.6,"type":"feed"}],"reverse_osmosis":[{"id":"feedIn","mount":"shell","height":0.2,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"permeateOut","mount":"shell","height":0.5,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"concentrateOut","mount":"shell","height":0.85,"angle":90.0,"radial":0.6,"type":"outlet"}],"steam_generator":[{"id":"steamOut","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"condReturn","mount":"shell","height":0.6,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"feedwaterIn","mount":"shell","height":0.2,"angle":270.0,"radial":0.6,"type":"feed"}],"paddle_dryer":[{"id":"feedIn","mount":"shell","height":0.25,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"powderOut","mount":"shell","height":0.75,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"vaporOut","mount":"shell","height":0.55,"angle":90.0,"radial":0.6,"type":"vent"},{"id":"jacketIn","mount":"shell","height":0.3,"angle":0.0,"radial":0.6,"type":"jacket"},{"id":"jacketOut","mount":"shell","height":0.7,"angle":0.0,"radial":0.6,"type":"jacket"}],"radial_column":[{"id":"feedIn","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"},{"id":"eluateOut","mount":"bottom","height":0.5,"angle":0.0,"radial":0.0,"type":"outlet"}],"ibc_container":[{"id":"fillTop","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"},{"id":"valveOut","mount":"shell","height":0.12,"angle":270.0,"radial":0.6,"type":"outlet"}],"cooling_tower":[{"id":"hotWaterIn","mount":"shell","height":0.8,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"coldWaterOut","mount":"shell","height":0.08,"angle":180.0,"radial":0.6,"type":"outlet"},{"id":"makeupIn","mount":"shell","height":0.15,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"blowdownOut","mount":"shell","height":0.02,"angle":270.0,"radial":0.6,"type":"outlet"}],"centrifugal_pump":[{"id":"suctionIn","mount":"shell","height":0.5,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"dischargeOut","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"outlet"}],"coarse_filter":[{"id":"inlet","mount":"shell","height":0.5,"angle":180.0,"radial":0.6,"type":"feed"},{"id":"outlet","mount":"shell","height":0.5,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"drainOut","mount":"bottom","height":0.5,"angle":0.0,"radial":0.0,"type":"outlet"}],"silo":[{"id":"fillTop","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"},{"id":"reagentOut","mount":"bottom","height":0.5,"angle":0.0,"radial":0.0,"type":"outlet"}],"dissolving_reactor":[{"id":"reagentIn","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"},{"id":"waterIn","mount":"top","height":0.5,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"solutionOut","mount":"shell","height":0.12,"angle":0.0,"radial":0.6,"type":"outlet"}],"conveyor_furnace":[{"id":"feedIn","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"},{"id":"productOut","mount":"bottom","height":0.5,"angle":0.0,"radial":0.0,"type":"outlet"},{"id":"vaporOut","mount":"top","height":0.5,"angle":180.0,"radial":0.0,"type":"vent"}],"belt_conveyor":[{"id":"feedIn","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"},{"id":"dischargeOut","mount":"top","height":0.5,"angle":180.0,"radial":0.0,"type":"outlet"}],"vibro_screen":[{"id":"feedIn","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"},{"id":"oversizeOut","mount":"shell","height":0.72,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"finesOut","mount":"shell","height":0.38,"angle":180.0,"radial":0.6,"type":"outlet"}],"box_bin":[{"id":"inlet","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"}],"bipolar_ed":[{"id":"feedIn","mount":"shell","height":0.2,"angle":180.0,"radial":0.6,"type":"feed"},{"id":"acidOut","mount":"shell","height":0.5,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"baseOut","mount":"shell","height":0.5,"angle":270.0,"radial":0.6,"type":"outlet"}],"grinder":[{"id":"feedIn","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"},{"id":"productOut","mount":"bottom","height":0.5,"angle":0.0,"radial":0.0,"type":"outlet"}],"nitrogen_generator":[{"id":"airIn","mount":"shell","height":0.5,"angle":180.0,"radial":0.6,"type":"feed"},{"id":"nitrogenOut","mount":"shell","height":0.8,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"ventOut","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"vent"}],"pipe_tie_in":[{"id":"flangeOut","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"outlet"},{"id":"flangeIn","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"}],"pipe_header":[{"id":"inlet","mount":"shell","height":0.5,"angle":180.0,"radial":0.6,"type":"feed"},{"id":"outlet","mount":"shell","height":0.5,"angle":180.0,"radial":0.6,"type":"outlet"},{"id":"branch1","mount":"shell","height":0.5,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"branch2","mount":"shell","height":0.5,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"branch3","mount":"shell","height":0.5,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"branch4","mount":"shell","height":0.5,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"branch5","mount":"shell","height":0.5,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"branch6","mount":"shell","height":0.5,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"branch7","mount":"shell","height":0.5,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"branch8","mount":"shell","height":0.5,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"branch9","mount":"shell","height":0.5,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"branch10","mount":"shell","height":0.5,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"branch11","mount":"shell","height":0.5,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"branch12","mount":"shell","height":0.5,"angle":90.0,"radial":0.6,"type":"outlet"}],"pipe_tee":[{"id":"runIn","mount":"shell","height":0.5,"angle":180.0,"radial":0.6,"type":"feed"},{"id":"runOut","mount":"shell","height":0.5,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"branch","mount":"shell","height":0.5,"angle":90.0,"radial":0.6,"type":"outlet"}],"valve_manifold":[{"id":"topIn","mount":"shell","height":0.85,"angle":180.0,"radial":0.6,"type":"feed"},{"id":"topOut","mount":"shell","height":0.85,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"botIn","mount":"shell","height":0.12,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"botOut","mount":"shell","height":0.12,"angle":180.0,"radial":0.6,"type":"outlet"},{"id":"top1","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"top2","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"top3","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"top4","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"top5","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"top6","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"top7","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"top8","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"top9","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"top10","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"bot1","mount":"bottom","height":0.5,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"bot2","mount":"bottom","height":0.5,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"bot3","mount":"bottom","height":0.5,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"bot4","mount":"bottom","height":0.5,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"bot5","mount":"bottom","height":0.5,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"bot6","mount":"bottom","height":0.5,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"bot7","mount":"bottom","height":0.5,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"bot8","mount":"bottom","height":0.5,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"bot9","mount":"bottom","height":0.5,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"bot10","mount":"bottom","height":0.5,"angle":0.0,"radial":0.6,"type":"feed"}],"valve_station":[{"id":"brineIn","mount":"shell","height":0.85,"angle":180.0,"radial":0.6,"type":"feed"},{"id":"serviceIn","mount":"shell","height":0.7,"angle":180.0,"radial":0.6,"type":"feed"},{"id":"eluateOut","mount":"shell","height":0.35,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"wasteOut","mount":"shell","height":0.25,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"drainOut","mount":"shell","height":0.15,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"ch1Out","mount":"shell","height":0.6,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"ch2Out","mount":"shell","height":0.6,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"ch3Out","mount":"shell","height":0.6,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"ch4Out","mount":"shell","height":0.6,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"ch5Out","mount":"shell","height":0.6,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"ch6Out","mount":"shell","height":0.6,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"ch7Out","mount":"shell","height":0.6,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"ch8Out","mount":"shell","height":0.6,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"ch9Out","mount":"shell","height":0.6,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"ch10Out","mount":"shell","height":0.6,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"ch1In","mount":"shell","height":0.4,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"ch2In","mount":"shell","height":0.4,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"ch3In","mount":"shell","height":0.4,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"ch4In","mount":"shell","height":0.4,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"ch5In","mount":"shell","height":0.4,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"ch6In","mount":"shell","height":0.4,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"ch7In","mount":"shell","height":0.4,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"ch8In","mount":"shell","height":0.4,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"ch9In","mount":"shell","height":0.4,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"ch10In","mount":"shell","height":0.4,"angle":270.0,"radial":0.6,"type":"feed"}],"leadlag_station":[{"id":"brineIn","mount":"shell","height":0.9,"angle":180.0,"radial":0.6,"type":"feed"},{"id":"waterIn","mount":"shell","height":0.8,"angle":180.0,"radial":0.6,"type":"feed"},{"id":"acidIn","mount":"shell","height":0.7,"angle":180.0,"radial":0.6,"type":"feed"},{"id":"raffinateOut","mount":"shell","height":0.45,"angle":180.0,"radial":0.6,"type":"outlet"},{"id":"eluateOut","mount":"shell","height":0.35,"angle":180.0,"radial":0.6,"type":"outlet"},{"id":"wasteOut","mount":"shell","height":0.25,"angle":180.0,"radial":0.6,"type":"outlet"},{"id":"a1Out","mount":"shell","height":0.95,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"a1In","mount":"shell","height":0.1,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"b1Out","mount":"shell","height":0.95,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"b1In","mount":"shell","height":0.1,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"a2Out","mount":"shell","height":0.95,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"a2In","mount":"shell","height":0.1,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"b2Out","mount":"shell","height":0.95,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"b2In","mount":"shell","height":0.1,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"a3Out","mount":"shell","height":0.95,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"a3In","mount":"shell","height":0.1,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"b3Out","mount":"shell","height":0.95,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"b3In","mount":"shell","height":0.1,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"a4Out","mount":"shell","height":0.95,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"a4In","mount":"shell","height":0.1,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"b4Out","mount":"shell","height":0.95,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"b4In","mount":"shell","height":0.1,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"a5Out","mount":"shell","height":0.95,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"a5In","mount":"shell","height":0.1,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"b5Out","mount":"shell","height":0.95,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"b5In","mount":"shell","height":0.1,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"a6Out","mount":"shell","height":0.95,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"a6In","mount":"shell","height":0.1,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"b6Out","mount":"shell","height":0.95,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"b6In","mount":"shell","height":0.1,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"a7Out","mount":"shell","height":0.95,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"a7In","mount":"shell","height":0.1,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"b7Out","mount":"shell","height":0.95,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"b7In","mount":"shell","height":0.1,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"a8Out","mount":"shell","height":0.95,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"a8In","mount":"shell","height":0.1,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"b8Out","mount":"shell","height":0.95,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"b8In","mount":"shell","height":0.1,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"a9Out","mount":"shell","height":0.95,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"a9In","mount":"shell","height":0.1,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"b9Out","mount":"shell","height":0.95,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"b9In","mount":"shell","height":0.1,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"a10Out","mount":"shell","height":0.95,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"a10In","mount":"shell","height":0.1,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"b10Out","mount":"shell","height":0.95,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"b10In","mount":"shell","height":0.1,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"a11Out","mount":"shell","height":0.95,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"a11In","mount":"shell","height":0.1,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"b11Out","mount":"shell","height":0.95,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"b11In","mount":"shell","height":0.1,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"a12Out","mount":"shell","height":0.95,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"a12In","mount":"shell","height":0.1,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"b12Out","mount":"shell","height":0.95,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"b12In","mount":"shell","height":0.1,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"a13Out","mount":"shell","height":0.95,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"a13In","mount":"shell","height":0.1,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"b13Out","mount":"shell","height":0.95,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"b13In","mount":"shell","height":0.1,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"a14Out","mount":"shell","height":0.95,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"a14In","mount":"shell","height":0.1,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"b14Out","mount":"shell","height":0.95,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"b14In","mount":"shell","height":0.1,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"a15Out","mount":"shell","height":0.95,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"a15In","mount":"shell","height":0.1,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"b15Out","mount":"shell","height":0.95,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"b15In","mount":"shell","height":0.1,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"a16Out","mount":"shell","height":0.95,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"a16In","mount":"shell","height":0.1,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"b16Out","mount":"shell","height":0.95,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"b16In","mount":"shell","height":0.1,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"a17Out","mount":"shell","height":0.95,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"a17In","mount":"shell","height":0.1,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"b17Out","mount":"shell","height":0.95,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"b17In","mount":"shell","height":0.1,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"a18Out","mount":"shell","height":0.95,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"a18In","mount":"shell","height":0.1,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"b18Out","mount":"shell","height":0.95,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"b18In","mount":"shell","height":0.1,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"a19Out","mount":"shell","height":0.95,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"a19In","mount":"shell","height":0.1,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"b19Out","mount":"shell","height":0.95,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"b19In","mount":"shell","height":0.1,"angle":90.0,"radial":0.6,"type":"feed"},{"id":"a20Out","mount":"shell","height":0.95,"angle":270.0,"radial":0.6,"type":"outlet"},{"id":"a20In","mount":"shell","height":0.1,"angle":270.0,"radial":0.6,"type":"feed"},{"id":"b20Out","mount":"shell","height":0.95,"angle":90.0,"radial":0.6,"type":"outlet"},{"id":"b20In","mount":"shell","height":0.1,"angle":90.0,"radial":0.6,"type":"feed"}],"dosing_skid":[{"id":"lineIn","mount":"shell","height":0.35,"angle":180.0,"radial":0.6,"type":"feed"},{"id":"lineOut","mount":"shell","height":0.35,"angle":0.0,"radial":0.6,"type":"outlet"},{"id":"refillIn","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"feed"}],"control_cabinet":[{"id":"cableIn","mount":"shell","height":0.05,"angle":270.0,"radial":0.6,"type":"feed"}],"nmr_analyser":[{"id":"feedIn","mount":"shell","height":0.3,"angle":180.0,"radial":0.6,"type":"feed"},{"id":"feedOut","mount":"shell","height":0.3,"angle":0.0,"radial":0.6,"type":"outlet"}],"pontoon":[{"id":"seaSuction","mount":"top","height":0.5,"angle":0.0,"radial":0.0,"type":"outlet"},{"id":"overboardA","mount":"top","height":0.5,"angle":0.0,"radial":0.6,"type":"feed"},{"id":"overboardB","mount":"top","height":0.5,"angle":180.0,"radial":0.6,"type":"feed"}],"pier":[],"skid_frame":[],"operator":[],"photo_panel":[]}');
 
 // Visual presets per nozzle type. radius/length are fractions of vessel radius.
 var NOZZLE_PRESETS = {
@@ -7586,11 +7599,16 @@ function makeRadialColumn(params, nozzles) {
   // behind the outer ring and the collector, and where the cutaway exposes it the
   // wedge-face beads stand in for it -- so the cap buys a finer grain instead.
   var maxBeads = (params.maxBeads !== undefined) ? params.maxBeads : 0;
+  // solidBed: the bed is drawn as one solid annulus (with the same cutaway) instead of
+  // beads. A thin radial bed (a few cm) caps the grain at half its thickness, so no
+  // maxBeads gets a tall column under ~1500 beads -- and two hundred such columns put
+  // ~15 M triangles in a frame. The solid ring costs a few hundred.
+  var solidBed = params.solidBed === true;
   var skipInnerRing = maxBeads > 0;
   // the coarsest grain that still fits the annulus with the bead inside the shell
   var maxBeadR = (radius - coreR) / 2;
   var beadR = radius * 0.01875 * BEAD_COARSEN;
-  var beadPos = packShell(beadR);
+  var beadPos = solidBed ? [] : packShell(beadR);
   for (var gi = 0; maxBeads > 0 && beadPos.length / 3 > maxBeads && gi < 16 && beadR < maxBeadR; gi++) {
     var overR = beadR;                          // last grain still over the cap
     beadR = Math.min(maxBeadR, beadR * Math.max(1.05, Math.sqrt(beadPos.length / 3 / maxBeads)));
@@ -7640,6 +7658,40 @@ function makeRadialColumn(params, nozzles) {
   }
   return beadPos;
   }
+  if (solidBed) {
+    // annulus coreR..rOut over the bed height, the cutaway wedge left open: outer and
+    // inner walls, the bed surface and the two wedge faces. CylinderGeometry measures
+    // theta from +Z toward +X (x = r sin t, z = r cos t), the bead angle ba from +X
+    // toward +Z, so t = pi/2 - ba; RingGeometry turned flat measures phi = -ba.
+    var rOut = radius * 0.97;
+    var solidMat = bedMat.clone();                // walls are seen from either side
+    solidMat.side = THREE.DoubleSide;
+    var solidLen = Math.PI * 2 - 2 * cutHalf;
+    var tStart = Math.PI / 2 - cutCenter + cutHalf;
+    var bedY = bedBottom + bedHeight / 2;
+    var walls = [rOut, coreR * 1.01];
+    for (var wi = 0; wi < walls.length; wi++) {
+      var wall = new THREE.Mesh(new THREE.CylinderGeometry(
+        walls[wi], walls[wi], bedHeight, 32, 1, true, tStart, solidLen), solidMat);
+      wall.position.y = bedY;
+      inner.add(wall);
+    }
+    var surf = new THREE.Mesh(new THREE.RingGeometry(coreR, rOut, 32, 1,
+      cutHalf - cutCenter, solidLen), solidMat);
+    surf.rotation.x = -Math.PI / 2;
+    surf.position.y = bedTop;
+    inner.add(surf);
+    if (cutHalf > 0) {
+      var faceG = new THREE.PlaneGeometry(rOut - coreR, bedHeight);
+      [cutCenter - cutHalf, cutCenter + cutHalf].forEach(function (fa) {
+        var face = new THREE.Mesh(faceG, solidMat);
+        var rm = (rOut + coreR) / 2;
+        face.position.set(rm * Math.cos(fa), bedY, rm * Math.sin(fa));
+        face.rotation.y = -fa;
+        inner.add(face);
+      });
+    }
+  } else {
   var beadCount = beadPos.length / 3;
   var beads = new THREE.InstancedMesh(beadGeo, bedMat, beadCount);
   // a hollow pack must not be re-drawn into the shadow map (see build.py)
@@ -7651,6 +7703,7 @@ function makeRadialColumn(params, nozzles) {
   }
   beads.instanceMatrix.needsUpdate = true;
   inner.add(beads);
+  }
 
   // dark central collector on the axis, running the bed height; opaque, stays visible.
   // The beads packed around it make the fill read as a radial-flow annulus.
@@ -11703,7 +11756,7 @@ var LEADLAG_DEFAULTS = {
   seatHeight: 0.45, columnRadius: 0.095, clampHeight: 1.5, headerRadius: 0.05,
   brineHeight: 2.1, waterHeight: 1.85, acidHeight: 1.6,
   raffinateHeight: 1.1, eluateHeight: 0.85, wasteHeight: 0.6,
-  outletHeight: 2.6, inletHeight: 0.25, tag: "",
+  outletHeight: 2.6, inletHeight: 0.25, tag: "", crossovers: true,
   frameColor: 0xB8C0C8, headerColor: 0xC9D1D8, actuatorColor: 0xD8B23A,
   wheelColor: 0xB5822E, brineColor: 0x2E8B87, waterColor: 0x3498DB,
   acidColor: 0xD4C13A, raffinateColor: 0xE67E22, eluateColor: 0x21C2A8,
@@ -11795,6 +11848,10 @@ function makeLeadlagStation(params, _nozzles, eqId) {
   var P = p("pairs"), PITCH = p("pitch"), RO = p("rowOffset"), W = p("width");
   var SEAT = p("seatHeight"), CR = p("columnRadius"), YC = p("clampHeight");
   var HR = p("headerRadius"), MANUAL = !!p("manual");
+  // crossovers:false — колонны работают параллельно, каждая сама по себе: нет
+  // перемычек XAB/XBA, нет табличек LEAD / LAG, подъёмники обрезаны по крайним
+  // коллекторам. Шесть клапанов на колонну.
+  var CROSS = p("crossovers") !== false;
   var yOut = p("outletHeight"), yIn = p("inletHeight");
   var TAG = p("tag") || eqId || "LL";
   var PREFIX = MANUAL ? "HV-" : "XV-";
@@ -11892,6 +11949,7 @@ function makeLeadlagStation(params, _nozzles, eqId) {
       }
     }
     // табличка ряда LEAD / LAG — на торцевой стойке −X, читается с обеих сторон
+    if (!CROSS) return;
     var px = -xEnd + 0.32, py = (YC > 0 ? YC : SEAT) * 0.62 + 0.1, pz = zr + s * 0.06;
     box(0.5, 0.2, 0.012, px, py, pz, DARK);
     box(0.04, 0.2, 0.04, px - 0.27, py, pz - s * 0.03);          // кронштейн к стойке
@@ -12046,7 +12104,8 @@ function makeLeadlagStation(params, _nozzles, eqId) {
       var colName = "column " + K + n;
 
       // подъёмник подачи: участки между врезками, снизу вверх
-      var inStops = [yX, HEAD.acid.y, HEAD.water.y, HEAD.brine.y].sort(function (a, b) { return a - b; });
+      var inStops = (CROSS ? [yX] : []).concat([HEAD.acid.y, HEAD.water.y, HEAD.brine.y])
+        .sort(function (a, b) { return a - b; });
       var inSegs = [];                      // [yFrom, glowList]
       for (var i = 0; i < inStops.length; i++) {
         var top = (i + 1 < inStops.length) ? inStops[i + 1] : yOut;
@@ -12075,7 +12134,7 @@ function makeLeadlagStation(params, _nozzles, eqId) {
       // подъёмник возврата: с низа колонны вверх до перемычки
       var outStops = [yIn, HEAD.waste.y, HEAD.eluate.y, HEAD.raffinate.y].sort(function (a, b) { return a - b; });
       var outSegs = [];
-      for (var j = 0; j < outStops.length; j++) {
+      for (var j = 0; j < outStops.length - (CROSS ? 0 : 1); j++) {
         var hi = (j + 1 < outStops.length) ? outStops[j + 1] : yX;
         var gl2 = []; run([xo, outStops[j], zRs], [xo, hi, zRs], gl2);
         outSegs.push([hi, gl2]);
@@ -12099,6 +12158,7 @@ function makeLeadlagStation(params, _nozzles, eqId) {
       });
 
       // перемычка: верх возврата этой колонны -> низ подачи соседней
+      if (!CROSS) return;
       var xGlow = [];
       run([xo, yX, zRs], [xo, yX, -zRs], xGlow);
       var xcode = "X" + K + other;
@@ -12106,7 +12166,7 @@ function makeLeadlagStation(params, _nozzles, eqId) {
       pathByCode[n + ":" + xcode] = { segs: xGlow.concat(outPath(yX)), medium: "brine" };
     });
     // перемычка XAB светит и подъёмник подачи B целиком, XBA — подачи A
-    ["AB", "BA"].forEach(function (pr) {
+    if (CROSS) ["AB", "BA"].forEach(function (pr) {
       var rec = pathByCode[n + ":X" + pr];
       rec.segs = rec.segs.concat(inPathOf[pr[1]](yX));
     });
@@ -12688,8 +12748,13 @@ function makeControlCabinet(params, nozzles) {
     group.add(gland);
   }
 
-  // ---- присоединений нет ----
-  var ports = {};
+  // ---- единственное присоединение — ввод питающего кабеля ----
+  // Технологических линий у шкафа нет; cableIn — середина ряда кабельных
+  // вводов под задней стенкой цоколя: туда макет приводит кабель с берега.
+  var ports = {
+    cableIn: { position: new THREE.Vector3(0, P + 0.02, -D / 2 - 0.065),
+               direction: new THREE.Vector3(0, 0, -1) }
+  };
 
   function setTransparent(flag) {
     transparentMats.forEach(function (m) {
@@ -13270,10 +13335,18 @@ function makePontoon(params, nozzles) {
   params = params || {};
   nozzles = nozzles || resolveNozzles("pontoon", []);
   var S  = (params.size        !== undefined) ? params.size        : 8.0;
+  // Прямоугольная баржа: длина по X и ширина по Z (0 = size, квадрат как раньше).
+  var SX = (params.length && params.length > 0) ? params.length : S;
+  var SZ = (params.width  && params.width  > 0) ? params.width  : S;
   var D  = (params.deckHeight  !== undefined) ? params.deckHeight  : 0.9;
   var FR = (params.floatRadius !== undefined) ? params.floatRadius : 0.55;
   var RH = (params.railHeight  !== undefined) ? params.railHeight  : 1.05;
   var MP = (params.moonPool    !== undefined) ? params.moonPool    : 1.1;
+  var MX = (params.moonPoolX   !== undefined) ? params.moonPoolX   : 0.0;
+  var MZ = (params.moonPoolZ   !== undefined) ? params.moonPoolZ   : 0.0;
+  var IR = (params.intakeRadius !== undefined) ? params.intakeRadius : 0.11;
+  var DR = (params.drainRadius !== undefined) ? params.drainRadius : 0.09;
+  var KI = IR / 0.11, KD = DR / 0.09;               // масштаб стояка и сливов к дефолту
   var winch      = (params.winch      !== undefined) ? params.winch      : true;
   var ropeLength = (params.ropeLength !== undefined) ? params.ropeLength : 5.0;
   var seaSize    = (params.seaSize    !== undefined) ? params.seaSize    : 0.0;
@@ -13293,7 +13366,7 @@ function makePontoon(params, nozzles) {
   var pipeMat  = new THREE.MeshStandardMaterial({ color: 0x9AA6B2, metalness: 0.85, roughness: 0.35 });
   var transparentMats = [deckMat];
 
-  var H = S / 2, M = MP / 2;
+  var HX = SX / 2, HZ = SZ / 2, M = MP / 2;
 
   // ---- палуба: четыре плиты вокруг лунного колодца (сплошной Box его бы закрыл) ----
   var DT = 0.12;                                   // толщина настила
@@ -13302,37 +13375,47 @@ function makePontoon(params, nozzles) {
     m.position.set(x, D - DT / 2, z);
     group.add(m);
   }
-  plate(H - M, S, -(H + M) / 2, 0);                // борт −X
-  plate(H - M, S,  (H + M) / 2, 0);                // борт +X
-  plate(MP, H - M, 0, -(H + M) / 2);               // перемычка −Z
-  plate(MP, H - M, 0,  (H + M) / 2);               // перемычка +Z
+  plate(MX - M + HX, SZ, (MX - M - HX) / 2, 0);    // борт −X
+  plate(HX - MX - M, SZ, (MX + M + HX) / 2, 0);    // борт +X
+  plate(MP, MZ - M + HZ, MX, (MZ - M - HZ) / 2);   // перемычка −Z
+  plate(MP, HZ - MZ - M, MX, (MZ + M + HZ) / 2);   // перемычка +Z
 
-  // ---- поплавки: две полупогружённые цистерны вдоль Z, оси на ватерлинии ----
-  var floatX = H - FR * 1.15;
-  var hullG = new THREE.CylinderGeometry(FR, FR, S, 20);
+  // ---- поплавки: две полупогружённые цистерны под ДЛИННЫМИ бортами ----
+  // Квадрат — вдоль Z (как было); баржа, длинная по X, — вдоль X. Дальше всё
+  // считается в осях поплавка: u — вдоль поплавка, v — поперёк.
+  var alongZ = SZ >= SX;
+  var LU = alongZ ? SZ : SX, LV = alongZ ? SX : SZ;
+  function uv(u, y, v, m) {                         // (вдоль, высота, поперёк) -> мир
+    if (alongZ) m.position.set(v, y, u); else m.position.set(u, y, v);
+  }
+  var floatX = LV / 2 - FR * 1.15;
+  var half = Math.max(2, Math.floor(LU / 3.2));     // стоек и балок на полпоплавка
+  var span = LU / (2 * half + 1.2);
+  var hullG = new THREE.CylinderGeometry(FR, FR, LU, 20);
   var noseG = new THREE.SphereGeometry(FR, 16, 12);
   for (var f = -1; f <= 1; f += 2) {
     var hull = new THREE.Mesh(hullG, floatMat);
-    hull.rotation.x = Math.PI / 2;
-    hull.position.set(f * floatX, 0, 0);
+    if (alongZ) hull.rotation.x = Math.PI / 2; else hull.rotation.z = Math.PI / 2;
+    uv(0, 0, f * floatX, hull);
     group.add(hull);
     for (var n = -1; n <= 1; n += 2) {
       var nose = new THREE.Mesh(noseG, floatMat);
-      nose.position.set(f * floatX, 0, n * S / 2);
+      uv(n * LU / 2, 0, f * floatX, nose);
       group.add(nose);
     }
     // стойки поплавок -> палуба
-    for (var st = -2; st <= 2; st++) {
+    for (var st = -half; st <= half; st++) {
       var post = new THREE.Mesh(new THREE.BoxGeometry(0.16, D - DT, 0.16), trimMat);
-      post.position.set(f * floatX, (D - DT) / 2, st * (S / 5.2));
+      uv(st * span, (D - DT) / 2, f * floatX, post);
       group.add(post);
     }
   }
   // поперечные балки рамы под настилом
-  var beamG = new THREE.BoxGeometry(S, 0.16, 0.18);
-  for (var b = -2; b <= 2; b++) {
+  var beamG = alongZ ? new THREE.BoxGeometry(LV, 0.16, 0.18)
+                     : new THREE.BoxGeometry(0.18, 0.16, LV);
+  for (var b = -half; b <= half; b++) {
     var beam = new THREE.Mesh(beamG, trimMat);
-    beam.position.set(0, D - DT - 0.08, b * (S / 5.2));
+    uv(b * span, D - DT - 0.08, 0, beam);
     group.add(beam);
   }
 
@@ -13341,50 +13424,50 @@ function makePontoon(params, nozzles) {
   var curbG2 = new THREE.BoxGeometry(0.12, 0.16, MP + 0.24);
   for (var c = -1; c <= 1; c += 2) {
     var cz = new THREE.Mesh(curbG1, trimMat);
-    cz.position.set(0, D + 0.08, c * (M + 0.06)); group.add(cz);
+    cz.position.set(MX, D + 0.08, MZ + c * (M + 0.06)); group.add(cz);
     var cx = new THREE.Mesh(curbG2, trimMat);
-    cx.position.set(c * (M + 0.06), D + 0.08, 0); group.add(cx);
+    cx.position.set(MX + c * (M + 0.06), D + 0.08, MZ); group.add(cx);
   }
   var shaftG1 = new THREE.BoxGeometry(MP, D + 0.5, 0.06);
   var shaftG2 = new THREE.BoxGeometry(0.06, D + 0.5, MP);
   for (var w2 = -1; w2 <= 1; w2 += 2) {
     var sz = new THREE.Mesh(shaftG1, trimMat);
-    sz.position.set(0, (D - 0.5) / 2, w2 * M); group.add(sz);
+    sz.position.set(MX, (D - 0.5) / 2, MZ + w2 * M); group.add(sz);
     var sx = new THREE.Mesh(shaftG2, trimMat);
-    sx.position.set(w2 * M, (D - 0.5) / 2, 0); group.add(sx);
+    sx.position.set(MX + w2 * M, (D - 0.5) / 2, MZ); group.add(sx);
   }
   // решётка над водой в колодце — прутья видны сверху, вода под ними
   var barG = new THREE.CylinderGeometry(0.025, 0.025, MP, 8);
   for (var g = 0; g < 5; g++) {
     var bar = new THREE.Mesh(barG, railMat);
     bar.rotation.z = Math.PI / 2;
-    bar.position.set(0, 0.34, -M + MP * (g + 0.5) / 5);
+    bar.position.set(MX, 0.34, MZ - M + MP * (g + 0.5) / 5);
     group.add(bar);
   }
 
   // ---- водозаборный стояк: донный заборник -> шахта -> колено на −X ----
-  var SUCT_Y = D + 0.34;                            // ось горизонтального отвода
+  var SUCT_Y = D + ((params.intakeHeight !== undefined) ? params.intakeHeight : 0.34); // ось отвода над палубой
   var INTAKE_Y = -1.35;                             // глубина донного заборника
   var riser = new THREE.Mesh(
-    new THREE.CylinderGeometry(0.11, 0.11, SUCT_Y - INTAKE_Y, 16), pipeMat);
-  riser.position.set(0, (SUCT_Y + INTAKE_Y) / 2, 0);
+    new THREE.CylinderGeometry(IR, IR, SUCT_Y - INTAKE_Y, 16), pipeMat);
+  riser.position.set(MX, (SUCT_Y + INTAKE_Y) / 2, MZ);
   group.add(riser);
-  var elbow = new THREE.Mesh(new THREE.CylinderGeometry(0.11, 0.11, 0.30, 16), pipeMat);
+  var elbow = new THREE.Mesh(new THREE.CylinderGeometry(IR, IR, 0.30 * KI, 16), pipeMat);
   elbow.rotation.z = Math.PI / 2;
-  elbow.position.set(-0.13, SUCT_Y, 0);
+  elbow.position.set(MX - 0.13 * KI, SUCT_Y, MZ);
   group.add(elbow);
-  var flange = new THREE.Mesh(new THREE.CylinderGeometry(0.17, 0.17, 0.05, 16), railMat);
+  var flange = new THREE.Mesh(new THREE.CylinderGeometry(0.17 * KI, 0.17 * KI, 0.05, 16), railMat);
   flange.rotation.z = Math.PI / 2;
-  flange.position.set(-0.27, SUCT_Y, 0);
+  flange.position.set(MX - 0.27 * KI, SUCT_Y, MZ);
   group.add(flange);
   // донный заборник: сетчатая корзина с колпаком — «врезка в дно» видна сквозь воду
   var strainer = new THREE.Mesh(
-    new THREE.CylinderGeometry(0.26, 0.26, 0.5, 16, 1, true), railMat);
-  strainer.position.set(0, INTAKE_Y + 0.1, 0);
+    new THREE.CylinderGeometry(0.26 * KI, 0.26 * KI, 0.5, 16, 1, true), railMat);
+  strainer.position.set(MX, INTAKE_Y + 0.1, MZ);
   group.add(strainer);
-  var cap = new THREE.Mesh(new THREE.ConeGeometry(0.3, 0.22, 16), trimMat);
+  var cap = new THREE.Mesh(new THREE.ConeGeometry(0.3 * KI, 0.22, 16), trimMat);
   cap.rotation.x = Math.PI;
-  cap.position.set(0, INTAKE_Y - 0.2, 0);
+  cap.position.set(MX, INTAKE_Y - 0.2, MZ);
   group.add(cap);
   // кольца всасывания в колодце — оживают при наведении (см. tick)
   var suckMat = new THREE.MeshBasicMaterial({ color: 0x2FD0C0, transparent: true,
@@ -13392,9 +13475,9 @@ function makePontoon(params, nozzles) {
                                               side: THREE.DoubleSide });
   var rings = [];
   for (var r = 0; r < 3; r++) {
-    var ring = new THREE.Mesh(new THREE.TorusGeometry(0.34, 0.022, 6, 20), suckMat);
+    var ring = new THREE.Mesh(new THREE.TorusGeometry(0.34 * KI, 0.022, 6, 20), suckMat);
     ring.rotation.x = Math.PI / 2;
-    ring.position.set(0, -0.15 - r * 0.35, 0);
+    ring.position.set(MX, -0.15 - r * 0.35, MZ);
     ring.renderOrder = 2;
     group.add(ring);
     rings.push(ring);
@@ -13403,12 +13486,13 @@ function makePontoon(params, nozzles) {
   // ---- сливные воронки за борт (overboardA/B) ----
   // Воронки стоят по ДИАГОНАЛИ в свободных углах палубы: середины бортов
   // занимает рабочее оборудование, и слив, выведенный туда, спорил бы с ним.
-  var overboard = [[-S * 0.42, -S * 0.42], [S * 0.42, S * 0.42]];
+  var overboard = [params.overboardA || [-SX * 0.42, -SZ * 0.42],
+                   params.overboardB || [SX * 0.42, SZ * 0.42]];
   overboard.forEach(function (p) {
-    var funnel = new THREE.Mesh(new THREE.CylinderGeometry(0.19, 0.10, 0.26, 14), pipeMat);
+    var funnel = new THREE.Mesh(new THREE.CylinderGeometry(0.19 * KD, 0.10 * KD, 0.26, 14), pipeMat);
     funnel.position.set(p[0], D + 0.13, p[1]);
     group.add(funnel);
-    var down = new THREE.Mesh(new THREE.CylinderGeometry(0.09, 0.09, D + 0.4, 12), pipeMat);
+    var down = new THREE.Mesh(new THREE.CylinderGeometry(DR, DR, D + 0.4, 12), pipeMat);
     down.position.set(p[0], (D - 0.4) / 2, p[1]);
     group.add(down);
   });
@@ -13416,13 +13500,14 @@ function makePontoon(params, nozzles) {
   // ---- леерное ограждение ----
   if (RH > 0) {
     var stanchG = new THREE.CylinderGeometry(0.035, 0.035, RH, 8);
-    var steps = Math.max(2, Math.round(S / 1.3));
     var edges = [[1, 0], [-1, 0], [0, 1], [0, -1]];
     edges.forEach(function (e) {
+      var EL = e[0] ? SZ : SX;                      // борт X идёт вдоль Z и наоборот
+      var steps = Math.max(2, Math.round(EL / 1.3));
       for (var i = 0; i <= steps; i++) {
-        var t = -H + (S * i) / steps;
-        var sx2 = e[0] ? e[0] * H : t;
-        var sz2 = e[0] ? t : e[1] * H;
+        var t = -EL / 2 + (EL * i) / steps;
+        var sx2 = e[0] ? e[0] * HX : t;
+        var sz2 = e[0] ? t : e[1] * HZ;
         var stanch = new THREE.Mesh(stanchG, railMat);
         stanch.position.set(sx2, D + RH / 2, sz2);
         group.add(stanch);
@@ -13430,10 +13515,10 @@ function makePontoon(params, nozzles) {
       // два прута: верхний поручень и промежуточный
       [RH, RH * 0.55].forEach(function (h) {
         var rail = new THREE.Mesh(
-          new THREE.CylinderGeometry(0.028, 0.028, S, 8), railMat);
+          new THREE.CylinderGeometry(0.028, 0.028, EL, 8), railMat);
         rail.rotation.z = Math.PI / 2;
         if (e[0]) rail.rotation.y = Math.PI / 2;
-        rail.position.set(e[0] * H, D + h, e[1] * H);
+        rail.position.set(e[0] * HX, D + h, e[1] * HZ);
         group.add(rail);
       });
     });
@@ -13442,7 +13527,7 @@ function makePontoon(params, nozzles) {
   // ---- швартовая лебёдка на борту +X: платформа подтягивается к пирсу ----
   var drum = null;
   if (winch) {
-    var wx = H - 0.55;
+    var wx = HX - 0.55;
     var base = new THREE.Mesh(new THREE.BoxGeometry(0.7, 0.16, 0.9), trimMat);
     base.position.set(wx, D + 0.08, 0);
     group.add(base);
@@ -13475,7 +13560,7 @@ function makePontoon(params, nozzles) {
       group.add(rope);
       var fair = new THREE.Mesh(new THREE.TorusGeometry(0.14, 0.04, 6, 14), trimMat);
       fair.rotation.y = Math.PI / 2;
-      fair.position.set(H, D + 0.5, 0);
+      fair.position.set(HX, D + 0.5, 0);
       group.add(fair);
     }
   }
@@ -13552,7 +13637,7 @@ function makePontoon(params, nozzles) {
   }
 
   var ports = {
-    seaSuction: { position: new THREE.Vector3(-0.30, SUCT_Y, 0),
+    seaSuction: { position: new THREE.Vector3(MX - 0.30 * KI, SUCT_Y, MZ),
                   direction: new THREE.Vector3(-1, 0, 0) },
     overboardA: { position: new THREE.Vector3(overboard[0][0], D + 0.26, overboard[0][1]),
                   direction: new THREE.Vector3(0, 1, 0) },
@@ -14508,6 +14593,7 @@ function makePhMeter(params) {
   var group = makeAnalyzerBody(size, color);
   var sprite = makeValueSprite();
   sprite.position.set(0, 0.95 * size, 0); group.add(sprite);
+  sprite.visible = (params.readout !== false);      // as the flow meter's panel
   var v = value, t = 0, acc = 0;
   sprite.setVal("pH", value.toFixed(2), "#2ecc71");
   function tick(dt) {
@@ -14815,7 +14901,8 @@ function buildPiping(scene, spec, registry) {
   var mediumColors = {
     water: 0x3498db, steam: 0xecf0f1, product: 0xe67e22,
     coolant: 0x1abc9c, gas: 0xbdc3c7, reagent: 0xd8c9a0,
-    brine: 0x2e8b87, acid: 0xd4c13a, eluate: 0x21c2a8, "default": 0x95a5a6
+    brine: 0x2e8b87, acid: 0xd4c13a, eluate: 0x21c2a8, power: 0xe8631a,
+    "default": 0x95a5a6
   };
 
   // Human-readable info card for an inline component (hover tooltip + click panel).
@@ -15499,7 +15586,8 @@ function buildPID(spec) {
   var mediumColors = {
     water: "#3498db", steam: "#ecf0f1", product: "#e67e22",
     coolant: "#1abc9c", gas: "#bdc3c7", reagent: "#d8c9a0",
-    brine: "#2e8b87", acid: "#d4c13a", eluate: "#21c2a8", "default": "#95a5a6"
+    brine: "#2e8b87", acid: "#d4c13a", eluate: "#21c2a8", power: "#e8631a",
+    "default": "#95a5a6"
   };
   // A P&ID is a process document: it carries units, lines and instruments. Scenery
   // that exists only to give the 3D view a sense of scale or provenance — the
@@ -16462,6 +16550,8 @@ function buildPID(spec) {
       line.setAttribute("stroke-width", c.radius <= 0.02 ? 1.5 : (c.radius <= 0.05 ? 3 : 5));
       line.setAttribute("data-conn-id", c.id);
     }
+    // a power cable is an electrical line, not a pipe: dashed, as on any P&ID
+    if (c.medium === "power") line.setAttribute("stroke-dasharray", "8 5");
     lineLayer.appendChild(line);
   });
 
@@ -18591,7 +18681,8 @@ function _initScheduledCycle(spec, cfg, piping, registry, host) {
     }
     note.textContent = "t = " + t.toFixed(1) + " h · " + unitName(sel) + ": " +
       (st.text || ph.label) + " (" + Math.round((1 - p) * hours[i] * 60) + " min left) · " +
-      state.regen + " of " + units.length + " pairs regenerating";
+      state.regen + (sch.regenText ? " " + sch.regenText
+                                     : " of " + units.length + " pairs regenerating");
     readout.innerHTML = _cycleCounters(counters, ph, p, unitName(sel));
     speedBtns.forEach(function (sb) {
       if (sb[0] === speed) sb[1].classList.add("on"); else sb[1].classList.remove("on");

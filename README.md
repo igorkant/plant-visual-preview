@@ -15,6 +15,7 @@ Live: https://igorkant.github.io/plant-visual-preview/
 | `leadlag-skid.html` | Lead-lag DLE skid, 20 m³/h — five pairs of 2 m columns on one skid |
 | `leadlag-system.html` | Lead-lag DLE system, 200 m³/h — ten identical skids off two headers, brine pumps 2 + 1 |
 | `pontoon.html` | Floating sorption skid — four radial columns on a moored pontoon |
+| `pontoon-200.html` | Floating plant, 200 parallel radial columns on a 10 × 40 m pontoon, ≈2045 m³/h |
 | `demo.html` | Reference scene covering the archetype library |
 
 Append `?pid=1` to any page for the 2D P&ID view.
