@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Floating DLE plant — 200 parallel columns on 5 skids, 2557 m³/h, 50 kg per column · Dead Sea modes</title>
+<title>Floating DLE plant — 200 parallel columns on 5 skids, 2761 m³/h, 50 kg per column · Dead Sea modes</title>
 <style>
   html, body { margin: 0; height: 100%; overflow: hidden; background: #10141a; font-family: sans-serif; }
   canvas { display: block; }
@@ -8821,13 +8821,13 @@ var PLANT_SPEC = {
       ]
     },
     {
-      "dn": 400,
+      "dn": 500,
       "flexTail": 0.0,
       "from": "TE-BR.branch",
       "hiddenHead": 0.0,
       "id": "L-BR-N",
       "medium": "brine",
-      "radius": 0.203,
+      "radius": 0.254,
       "stream": null,
       "to": "H-BR-N.inlet",
       "waypoints": [
@@ -8839,13 +8839,13 @@ var PLANT_SPEC = {
       ]
     },
     {
-      "dn": 500,
+      "dn": 600,
       "flexTail": 0.0,
       "from": "TE-BR.runOut",
       "hiddenHead": 0.0,
       "id": "L-BR-F",
       "medium": "brine",
-      "radius": 0.254,
+      "radius": 0.305,
       "stream": null,
       "to": "H-BR-F.inlet",
       "waypoints": [
@@ -8875,13 +8875,13 @@ var PLANT_SPEC = {
       ]
     },
     {
-      "dn": 50,
+      "dn": 40,
       "flexTail": 0.0,
       "from": "TE-W.runOut",
       "hiddenHead": 0.0,
       "id": "L-W-F",
       "medium": "water",
-      "radius": 0.03,
+      "radius": 0.024,
       "stream": null,
       "to": "H-W-F.inlet",
       "waypoints": [
@@ -8893,13 +8893,13 @@ var PLANT_SPEC = {
       ]
     },
     {
-      "dn": 65,
+      "dn": 50,
       "flexTail": 0.0,
       "from": "TE-H.branch",
       "hiddenHead": 0.0,
       "id": "L-H-N",
       "medium": "acid",
-      "radius": 0.037,
+      "radius": 0.03,
       "stream": null,
       "to": "H-H-N.inlet",
       "waypoints": [
@@ -8911,13 +8911,13 @@ var PLANT_SPEC = {
       ]
     },
     {
-      "dn": 80,
+      "dn": 65,
       "flexTail": 0.0,
       "from": "TE-H.runOut",
       "hiddenHead": 0.0,
       "id": "L-H-F",
       "medium": "acid",
-      "radius": 0.045,
+      "radius": 0.037,
       "stream": null,
       "to": "H-H-F.inlet",
       "waypoints": [
@@ -8929,13 +8929,13 @@ var PLANT_SPEC = {
       ]
     },
     {
-      "dn": 40,
+      "dn": 80,
       "flexTail": 0.0,
       "from": "TE-N.branch",
       "hiddenHead": 0.0,
       "id": "L-N-N",
       "medium": "nacl",
-      "radius": 0.024,
+      "radius": 0.045,
       "stream": null,
       "to": "H-N-N.inlet",
       "waypoints": [
@@ -8947,13 +8947,13 @@ var PLANT_SPEC = {
       ]
     },
     {
-      "dn": 50,
+      "dn": 100,
       "flexTail": 0.0,
       "from": "TE-N.runOut",
       "hiddenHead": 0.0,
       "id": "L-N-F",
       "medium": "nacl",
-      "radius": 0.03,
+      "radius": 0.057,
       "stream": null,
       "to": "H-N-F.inlet",
       "waypoints": [
@@ -8983,13 +8983,13 @@ var PLANT_SPEC = {
       ]
     },
     {
-      "dn": 50,
+      "dn": 40,
       "flexTail": 0.0,
       "from": "H-E-F.outlet",
       "hiddenHead": 0.0,
       "id": "L-E-F",
       "medium": "eluate",
-      "radius": 0.03,
+      "radius": 0.024,
       "stream": null,
       "to": "TE-E.runIn",
       "waypoints": [
@@ -9001,13 +9001,13 @@ var PLANT_SPEC = {
       ]
     },
     {
-      "dn": 65,
+      "dn": 80,
       "flexTail": 0.0,
       "from": "H-D-N.outlet",
       "hiddenHead": 0.0,
       "id": "L-D-N",
       "medium": "waste",
-      "radius": 0.037,
+      "radius": 0.045,
       "stream": null,
       "to": "TE-D.branch",
       "waypoints": [
@@ -9019,13 +9019,13 @@ var PLANT_SPEC = {
       ]
     },
     {
-      "dn": 80,
+      "dn": 100,
       "flexTail": 0.0,
       "from": "H-D-F.outlet",
       "hiddenHead": 0.0,
       "id": "L-D-F",
       "medium": "waste",
-      "radius": 0.045,
+      "radius": 0.057,
       "stream": null,
       "to": "TE-D.runIn",
       "waypoints": [
@@ -9127,13 +9127,13 @@ var PLANT_SPEC = {
       ]
     },
     {
-      "dn": 40,
+      "dn": 80,
       "flexTail": 0.0,
       "from": "SK-01.wasteOut",
       "hiddenHead": 0.0,
       "id": "L-SK-01-D",
       "medium": "waste",
-      "radius": 0.024,
+      "radius": 0.045,
       "stream": null,
       "to": "H-D-F.branch3",
       "waypoints": [
@@ -9145,13 +9145,13 @@ var PLANT_SPEC = {
       ]
     },
     {
-      "dn": 25,
+      "dn": 65,
       "flexTail": 0.0,
       "from": "H-N-F.branch3",
       "hiddenHead": 0.0,
       "id": "L-SK-01-N",
       "medium": "nacl",
-      "radius": 0.017,
+      "radius": 0.037,
       "stream": null,
       "to": "SK-01.naclIn",
       "waypoints": [
@@ -9253,13 +9253,13 @@ var PLANT_SPEC = {
       ]
     },
     {
-      "dn": 40,
+      "dn": 80,
       "flexTail": 0.0,
       "from": "SK-02.wasteOut",
       "hiddenHead": 0.0,
       "id": "L-SK-02-D",
       "medium": "waste",
-      "radius": 0.024,
+      "radius": 0.045,
       "stream": null,
       "to": "H-D-F.branch2",
       "waypoints": [
@@ -9271,13 +9271,13 @@ var PLANT_SPEC = {
       ]
     },
     {
-      "dn": 25,
+      "dn": 65,
       "flexTail": 0.0,
       "from": "H-N-F.branch2",
       "hiddenHead": 0.0,
       "id": "L-SK-02-N",
       "medium": "nacl",
-      "radius": 0.017,
+      "radius": 0.037,
       "stream": null,
       "to": "SK-02.naclIn",
       "waypoints": [
@@ -9379,13 +9379,13 @@ var PLANT_SPEC = {
       ]
     },
     {
-      "dn": 40,
+      "dn": 80,
       "flexTail": 0.0,
       "from": "SK-03.wasteOut",
       "hiddenHead": 0.0,
       "id": "L-SK-03-D",
       "medium": "waste",
-      "radius": 0.024,
+      "radius": 0.045,
       "stream": null,
       "to": "H-D-F.branch1",
       "waypoints": [
@@ -9397,13 +9397,13 @@ var PLANT_SPEC = {
       ]
     },
     {
-      "dn": 25,
+      "dn": 65,
       "flexTail": 0.0,
       "from": "H-N-F.branch1",
       "hiddenHead": 0.0,
       "id": "L-SK-03-N",
       "medium": "nacl",
-      "radius": 0.017,
+      "radius": 0.037,
       "stream": null,
       "to": "SK-03.naclIn",
       "waypoints": [
@@ -9505,13 +9505,13 @@ var PLANT_SPEC = {
       ]
     },
     {
-      "dn": 40,
+      "dn": 80,
       "flexTail": 0.0,
       "from": "SK-04.wasteOut",
       "hiddenHead": 0.0,
       "id": "L-SK-04-D",
       "medium": "waste",
-      "radius": 0.024,
+      "radius": 0.045,
       "stream": null,
       "to": "H-D-N.branch2",
       "waypoints": [
@@ -9523,13 +9523,13 @@ var PLANT_SPEC = {
       ]
     },
     {
-      "dn": 25,
+      "dn": 65,
       "flexTail": 0.0,
       "from": "H-N-N.branch2",
       "hiddenHead": 0.0,
       "id": "L-SK-04-N",
       "medium": "nacl",
-      "radius": 0.017,
+      "radius": 0.037,
       "stream": null,
       "to": "SK-04.naclIn",
       "waypoints": [
@@ -9631,13 +9631,13 @@ var PLANT_SPEC = {
       ]
     },
     {
-      "dn": 40,
+      "dn": 80,
       "flexTail": 0.0,
       "from": "SK-05.wasteOut",
       "hiddenHead": 0.0,
       "id": "L-SK-05-D",
       "medium": "waste",
-      "radius": 0.024,
+      "radius": 0.045,
       "stream": null,
       "to": "H-D-N.branch1",
       "waypoints": [
@@ -9649,13 +9649,13 @@ var PLANT_SPEC = {
       ]
     },
     {
-      "dn": 25,
+      "dn": 65,
       "flexTail": 0.0,
       "from": "H-N-N.branch1",
       "hiddenHead": 0.0,
       "id": "L-SK-05-N",
       "medium": "nacl",
-      "radius": 0.017,
+      "radius": 0.037,
       "stream": null,
       "to": "SK-05.naclIn",
       "waypoints": [
@@ -9667,13 +9667,13 @@ var PLANT_SPEC = {
       ]
     },
     {
-      "dn": 400,
+      "dn": 500,
       "flexTail": 0.0,
       "from": "H-R-N.outlet",
       "hiddenHead": 0.0,
       "id": "L-R-N",
       "medium": "brine",
-      "radius": 0.203,
+      "radius": 0.254,
       "stream": null,
       "to": "PON-1.overboardA",
       "waypoints": [
@@ -9685,13 +9685,13 @@ var PLANT_SPEC = {
       ]
     },
     {
-      "dn": 500,
+      "dn": 600,
       "flexTail": 0.0,
       "from": "H-R-F.outlet",
       "hiddenHead": 0.0,
       "id": "L-R-F",
       "medium": "brine",
-      "radius": 0.254,
+      "radius": 0.305,
       "stream": null,
       "to": "PON-1.overboardB",
       "waypoints": [
@@ -10037,13 +10037,13 @@ var PLANT_SPEC = {
       ]
     },
     {
-      "dn": 65,
+      "dn": 50,
       "flexTail": 0.0,
       "from": "TE-E.runOut",
       "hiddenHead": 0.0,
       "id": "L-E1",
       "medium": "eluate",
-      "radius": 0.037,
+      "radius": 0.03,
       "stream": null,
       "to": "T-401.inlet",
       "waypoints": [
@@ -10121,13 +10121,13 @@ var PLANT_SPEC = {
       ]
     },
     {
-      "dn": 65,
+      "dn": 50,
       "flexTail": 0.0,
       "from": "BL-W.flangeOut",
       "hiddenHead": 0.0,
       "id": "L-W1",
       "medium": "water",
-      "radius": 0.037,
+      "radius": 0.03,
       "stream": null,
       "to": "TE-W.runIn",
       "waypoints": [
@@ -10206,7 +10206,7 @@ var PLANT_SPEC = {
     {
       "id": "SK-01",
       "instanceable": false,
-      "label": "Column valve station SK-01 \u2014 40 parallel columns, 7 actuated valves each, 511 m\u00b3/h",
+      "label": "Column valve station SK-01 \u2014 40 parallel columns, 7 actuated valves each, 552 m\u00b3/h",
       "nozzles": [],
       "params": {
         "acidColor": 13943098,
@@ -11662,7 +11662,7 @@ var PLANT_SPEC = {
     {
       "id": "SK-02",
       "instanceable": false,
-      "label": "Column valve station SK-02 \u2014 40 parallel columns, 7 actuated valves each, 511 m\u00b3/h",
+      "label": "Column valve station SK-02 \u2014 40 parallel columns, 7 actuated valves each, 552 m\u00b3/h",
       "nozzles": [],
       "params": {
         "acidColor": 13943098,
@@ -13118,7 +13118,7 @@ var PLANT_SPEC = {
     {
       "id": "SK-03",
       "instanceable": false,
-      "label": "Column valve station SK-03 \u2014 40 parallel columns, 7 actuated valves each, 511 m\u00b3/h",
+      "label": "Column valve station SK-03 \u2014 40 parallel columns, 7 actuated valves each, 552 m\u00b3/h",
       "nozzles": [],
       "params": {
         "acidColor": 13943098,
@@ -14574,7 +14574,7 @@ var PLANT_SPEC = {
     {
       "id": "SK-04",
       "instanceable": false,
-      "label": "Column valve station SK-04 \u2014 40 parallel columns, 7 actuated valves each, 511 m\u00b3/h",
+      "label": "Column valve station SK-04 \u2014 40 parallel columns, 7 actuated valves each, 552 m\u00b3/h",
       "nozzles": [],
       "params": {
         "acidColor": 13943098,
@@ -16030,7 +16030,7 @@ var PLANT_SPEC = {
     {
       "id": "SK-05",
       "instanceable": false,
-      "label": "Column valve station SK-05 \u2014 40 parallel columns, 7 actuated valves each, 511 m\u00b3/h",
+      "label": "Column valve station SK-05 \u2014 40 parallel columns, 7 actuated valves each, 552 m\u00b3/h",
       "nozzles": [],
       "params": {
         "acidColor": 13943098,
@@ -17486,7 +17486,7 @@ var PLANT_SPEC = {
     {
       "id": "H-BR-F",
       "instanceable": false,
-      "label": "Brine header H-BR-F \u2014 far group, 3 branches, one per skid SK-01\u2026SK-03 \u00b7 3 \u00d7 511 m\u00b3/h = 1534 m\u00b3/h",
+      "label": "Brine header H-BR-F \u2014 far group, 3 branches, one per skid SK-01\u2026SK-03 \u00b7 3 \u00d7 552 m\u00b3/h = 1657 m\u00b3/h",
       "nozzles": [],
       "params": {
         "branchLength": 0.3,
@@ -17502,7 +17502,7 @@ var PLANT_SPEC = {
         "pitch": 3.3,
         "rackTiers": [],
         "rackWidth": 0.0,
-        "radius": 0.254,
+        "radius": 0.305,
         "supportColor": 4870232,
         "supports": true
       },
@@ -17522,7 +17522,7 @@ var PLANT_SPEC = {
     {
       "id": "H-W-F",
       "instanceable": false,
-      "label": "Wash water header H-W-F \u2014 far group, 3 branches, one per skid SK-01\u2026SK-03 \u00b7 6 m\u00b3/h",
+      "label": "Wash water header H-W-F \u2014 far group, 3 branches, one per skid SK-01\u2026SK-03 \u00b7 4.3635 m\u00b3/h",
       "nozzles": [],
       "params": {
         "branchLength": 0.3,
@@ -17538,7 +17538,7 @@ var PLANT_SPEC = {
         "pitch": 3.3,
         "rackTiers": [],
         "rackWidth": 0.0,
-        "radius": 0.03,
+        "radius": 0.024,
         "supportColor": 4870232,
         "supports": true
       },
@@ -17558,7 +17558,7 @@ var PLANT_SPEC = {
     {
       "id": "H-H-F",
       "instanceable": false,
-      "label": "H\u2082SO\u2084 0.8 M header H-H-F \u2014 far group, 3 branches, one per skid SK-01\u2026SK-03 \u00b7 15 m\u00b3/h",
+      "label": "H\u2082SO\u2084 0.8 M header H-H-F \u2014 far group, 3 branches, one per skid SK-01\u2026SK-03 \u00b7 10.9092 m\u00b3/h",
       "nozzles": [],
       "params": {
         "branchLength": 0.3,
@@ -17574,7 +17574,7 @@ var PLANT_SPEC = {
         "pitch": 3.3,
         "rackTiers": [],
         "rackWidth": 0.0,
-        "radius": 0.045,
+        "radius": 0.037,
         "supportColor": 4870232,
         "supports": true
       },
@@ -17594,11 +17594,11 @@ var PLANT_SPEC = {
     {
       "id": "H-N-F",
       "instanceable": false,
-      "label": "Na\u2082CO\u2083 header H-N-F \u2014 far group, 3 branches, one per skid SK-01\u2026SK-03 \u00b7 5.4546 m\u00b3/h",
+      "label": "Na\u2082CO\u2083 header H-N-F \u2014 far group, 3 branches, one per skid SK-01\u2026SK-03 \u00b7 32.7273 m\u00b3/h",
       "nozzles": [],
       "params": {
         "branchLength": 0.3,
-        "branchRadius": 0.017,
+        "branchRadius": 0.037,
         "branchSide": "down",
         "branches": 3,
         "elevation": 6.0,
@@ -17610,7 +17610,7 @@ var PLANT_SPEC = {
         "pitch": 3.3,
         "rackTiers": [],
         "rackWidth": 0.0,
-        "radius": 0.03,
+        "radius": 0.057,
         "supportColor": 4870232,
         "supports": true
       },
@@ -17630,7 +17630,7 @@ var PLANT_SPEC = {
     {
       "id": "H-R-F",
       "instanceable": false,
-      "label": "Raffinate header H-R-F \u2014 far group, 3 branches, one per skid SK-01\u2026SK-03 \u00b7 3 \u00d7 511 m\u00b3/h = 1534 m\u00b3/h",
+      "label": "Raffinate header H-R-F \u2014 far group, 3 branches, one per skid SK-01\u2026SK-03 \u00b7 3 \u00d7 552 m\u00b3/h = 1657 m\u00b3/h",
       "nozzles": [],
       "params": {
         "branchLength": 0.3,
@@ -17646,7 +17646,7 @@ var PLANT_SPEC = {
         "pitch": 3.3,
         "rackTiers": [],
         "rackWidth": 0.0,
-        "radius": 0.254,
+        "radius": 0.305,
         "supportColor": 4870232,
         "supports": true
       },
@@ -17666,7 +17666,7 @@ var PLANT_SPEC = {
     {
       "id": "H-E-F",
       "instanceable": false,
-      "label": "Eluate header H-E-F \u2014 far group, 3 branches, one per skid SK-01\u2026SK-03 \u00b7 6 m\u00b3/h",
+      "label": "Eluate header H-E-F \u2014 far group, 3 branches, one per skid SK-01\u2026SK-03 \u00b7 4.3635 m\u00b3/h",
       "nozzles": [],
       "params": {
         "branchLength": 0.3,
@@ -17682,7 +17682,7 @@ var PLANT_SPEC = {
         "pitch": 3.3,
         "rackTiers": [],
         "rackWidth": 0.0,
-        "radius": 0.03,
+        "radius": 0.024,
         "supportColor": 4870232,
         "supports": true
       },
@@ -17702,11 +17702,11 @@ var PLANT_SPEC = {
     {
       "id": "H-D-F",
       "instanceable": false,
-      "label": "Sulfate header H-D-F \u2014 far group, 3 branches, one per skid SK-01\u2026SK-03 \u00b7 14.4546 m\u00b3/h",
+      "label": "Sulfate header H-D-F \u2014 far group, 3 branches, one per skid SK-01\u2026SK-03 \u00b7 37.0908 m\u00b3/h",
       "nozzles": [],
       "params": {
         "branchLength": 0.3,
-        "branchRadius": 0.024,
+        "branchRadius": 0.045,
         "branchSide": "down",
         "branches": 3,
         "elevation": 4.4,
@@ -17718,7 +17718,7 @@ var PLANT_SPEC = {
         "pitch": 3.3,
         "rackTiers": [],
         "rackWidth": 0.0,
-        "radius": 0.045,
+        "radius": 0.057,
         "supportColor": 4870232,
         "supports": true
       },
@@ -17738,7 +17738,7 @@ var PLANT_SPEC = {
     {
       "id": "H-BR-N",
       "instanceable": false,
-      "label": "Brine header H-BR-N \u2014 near group, 2 branches, one per skid SK-04\u2026SK-05 \u00b7 2 \u00d7 511 m\u00b3/h = 1023 m\u00b3/h",
+      "label": "Brine header H-BR-N \u2014 near group, 2 branches, one per skid SK-04\u2026SK-05 \u00b7 2 \u00d7 552 m\u00b3/h = 1105 m\u00b3/h",
       "nozzles": [],
       "params": {
         "branchLength": 0.3,
@@ -17754,7 +17754,7 @@ var PLANT_SPEC = {
         "pitch": 3.3,
         "rackTiers": [],
         "rackWidth": 0.0,
-        "radius": 0.203,
+        "radius": 0.254,
         "supportColor": 4870232,
         "supports": true
       },
@@ -17774,7 +17774,7 @@ var PLANT_SPEC = {
     {
       "id": "H-W-N",
       "instanceable": false,
-      "label": "Wash water header H-W-N \u2014 near group, 2 branches, one per skid SK-04\u2026SK-05 \u00b7 4 m\u00b3/h",
+      "label": "Wash water header H-W-N \u2014 near group, 2 branches, one per skid SK-04\u2026SK-05 \u00b7 2.909 m\u00b3/h",
       "nozzles": [],
       "params": {
         "branchLength": 0.3,
@@ -17810,7 +17810,7 @@ var PLANT_SPEC = {
     {
       "id": "H-H-N",
       "instanceable": false,
-      "label": "H\u2082SO\u2084 0.8 M header H-H-N \u2014 near group, 2 branches, one per skid SK-04\u2026SK-05 \u00b7 10 m\u00b3/h",
+      "label": "H\u2082SO\u2084 0.8 M header H-H-N \u2014 near group, 2 branches, one per skid SK-04\u2026SK-05 \u00b7 7.2728 m\u00b3/h",
       "nozzles": [],
       "params": {
         "branchLength": 0.3,
@@ -17826,7 +17826,7 @@ var PLANT_SPEC = {
         "pitch": 3.3,
         "rackTiers": [],
         "rackWidth": 0.0,
-        "radius": 0.037,
+        "radius": 0.03,
         "supportColor": 4870232,
         "supports": true
       },
@@ -17846,11 +17846,11 @@ var PLANT_SPEC = {
     {
       "id": "H-N-N",
       "instanceable": false,
-      "label": "Na\u2082CO\u2083 header H-N-N \u2014 near group, 2 branches, one per skid SK-04\u2026SK-05 \u00b7 3.6364 m\u00b3/h",
+      "label": "Na\u2082CO\u2083 header H-N-N \u2014 near group, 2 branches, one per skid SK-04\u2026SK-05 \u00b7 21.8182 m\u00b3/h",
       "nozzles": [],
       "params": {
         "branchLength": 0.3,
-        "branchRadius": 0.017,
+        "branchRadius": 0.037,
         "branchSide": "down",
         "branches": 2,
         "elevation": 6.0,
@@ -17862,7 +17862,7 @@ var PLANT_SPEC = {
         "pitch": 3.3,
         "rackTiers": [],
         "rackWidth": 0.0,
-        "radius": 0.024,
+        "radius": 0.045,
         "supportColor": 4870232,
         "supports": true
       },
@@ -17882,7 +17882,7 @@ var PLANT_SPEC = {
     {
       "id": "H-R-N",
       "instanceable": false,
-      "label": "Raffinate header H-R-N \u2014 near group, 2 branches, one per skid SK-04\u2026SK-05 \u00b7 2 \u00d7 511 m\u00b3/h = 1023 m\u00b3/h",
+      "label": "Raffinate header H-R-N \u2014 near group, 2 branches, one per skid SK-04\u2026SK-05 \u00b7 2 \u00d7 552 m\u00b3/h = 1105 m\u00b3/h",
       "nozzles": [],
       "params": {
         "branchLength": 0.3,
@@ -17898,7 +17898,7 @@ var PLANT_SPEC = {
         "pitch": 3.3,
         "rackTiers": [],
         "rackWidth": 0.0,
-        "radius": 0.203,
+        "radius": 0.254,
         "supportColor": 4870232,
         "supports": true
       },
@@ -17918,7 +17918,7 @@ var PLANT_SPEC = {
     {
       "id": "H-E-N",
       "instanceable": false,
-      "label": "Eluate header H-E-N \u2014 near group, 2 branches, one per skid SK-04\u2026SK-05 \u00b7 4 m\u00b3/h",
+      "label": "Eluate header H-E-N \u2014 near group, 2 branches, one per skid SK-04\u2026SK-05 \u00b7 2.909 m\u00b3/h",
       "nozzles": [],
       "params": {
         "branchLength": 0.3,
@@ -17954,11 +17954,11 @@ var PLANT_SPEC = {
     {
       "id": "H-D-N",
       "instanceable": false,
-      "label": "Sulfate header H-D-N \u2014 near group, 2 branches, one per skid SK-04\u2026SK-05 \u00b7 9.6364 m\u00b3/h",
+      "label": "Sulfate header H-D-N \u2014 near group, 2 branches, one per skid SK-04\u2026SK-05 \u00b7 24.7272 m\u00b3/h",
       "nozzles": [],
       "params": {
         "branchLength": 0.3,
-        "branchRadius": 0.024,
+        "branchRadius": 0.045,
         "branchSide": "down",
         "branches": 2,
         "elevation": 4.4,
@@ -17970,7 +17970,7 @@ var PLANT_SPEC = {
         "pitch": 3.3,
         "rackTiers": [],
         "rackWidth": 0.0,
-        "radius": 0.037,
+        "radius": 0.045,
         "supportColor": 4870232,
         "supports": true
       },
@@ -18023,13 +18023,13 @@ var PLANT_SPEC = {
       "nozzles": [],
       "params": {
         "branchLength": 0.25,
-        "branchRadius": 0.037,
+        "branchRadius": 0.03,
         "branchSide": "-z",
         "flangeColor": 12107976,
         "medium": "water",
         "mediumColor": 3447003,
         "pipeColor": 9214116,
-        "radius": 0.037,
+        "radius": 0.03,
         "runLength": 0.4
       },
       "position": [
@@ -18110,13 +18110,13 @@ var PLANT_SPEC = {
       "nozzles": [],
       "params": {
         "branchLength": 0.25,
-        "branchRadius": 0.037,
+        "branchRadius": 0.03,
         "branchSide": "+z",
         "flangeColor": 12107976,
         "medium": "eluate",
         "mediumColor": 2212520,
         "pipeColor": 9214116,
-        "radius": 0.037,
+        "radius": 0.03,
         "runLength": 0.4
       },
       "position": [
@@ -18169,7 +18169,7 @@ var PLANT_SPEC = {
       "params": {
         "deckColor": 9081497,
         "deckHeight": 1.2,
-        "drainRadius": 0.254,
+        "drainRadius": 0.305,
         "floatColor": 14197306,
         "floatRadius": 1.0,
         "intakeHeight": 0.45999999999999996,
@@ -18213,7 +18213,7 @@ var PLANT_SPEC = {
     {
       "id": "P-101",
       "instanceable": false,
-      "label": "Brine pump P-101 \u2014 1278 m\u00b3/h, duty",
+      "label": "Brine pump P-101 \u2014 1381 m\u00b3/h, duty",
       "nozzles": [],
       "params": {
         "baseColor": 3359061,
@@ -18243,7 +18243,7 @@ var PLANT_SPEC = {
     {
       "id": "P-102",
       "instanceable": false,
-      "label": "Brine pump P-102 \u2014 1278 m\u00b3/h, duty",
+      "label": "Brine pump P-102 \u2014 1381 m\u00b3/h, duty",
       "nozzles": [],
       "params": {
         "baseColor": 3359061,
@@ -18273,7 +18273,7 @@ var PLANT_SPEC = {
     {
       "id": "P-103",
       "instanceable": false,
-      "label": "Brine pump P-103 \u2014 1278 m\u00b3/h, standby, auto-start on a duty pump trip",
+      "label": "Brine pump P-103 \u2014 1381 m\u00b3/h, standby, auto-start on a duty pump trip",
       "nozzles": [],
       "params": {
         "baseColor": 3359061,
@@ -18339,7 +18339,7 @@ var PLANT_SPEC = {
     {
       "id": "H-BP",
       "instanceable": false,
-      "label": "Brine pump discharge header H-BP \u2014 P-101 / P-102 duty, P-103 standby, 2557 m\u00b3/h to the pre-treatment train",
+      "label": "Brine pump discharge header H-BP \u2014 P-101 / P-102 duty, P-103 standby, 2761 m\u00b3/h to the pre-treatment train",
       "nozzles": [],
       "params": {
         "branchLength": 0.3,
@@ -18406,7 +18406,7 @@ var PLANT_SPEC = {
     {
       "id": "F-101",
       "instanceable": false,
-      "label": "Filter F-101 \u2014 10 / 1 / 0.1 \u00b5m, cleaned or changed on \u0394P \u00b7 2557 m\u00b3/h",
+      "label": "Filter F-101 \u2014 10 / 1 / 0.1 \u00b5m, cleaned or changed on \u0394P \u00b7 2761 m\u00b3/h",
       "nozzles": [],
       "params": {
         "backwashManifold": true,
@@ -18625,7 +18625,7 @@ var PLANT_SPEC = {
     {
       "id": "P-201",
       "instanceable": false,
-      "label": "H\u2082SO\u2084 0.8 M pump P-201 \u2014 21 m\u00b3/h",
+      "label": "H\u2082SO\u2084 0.8 M pump P-201 \u2014 16.7273 m\u00b3/h",
       "nozzles": [],
       "params": {
         "baseColor": 3359061,
@@ -18689,7 +18689,7 @@ var PLANT_SPEC = {
     {
       "id": "P-202",
       "instanceable": false,
-      "label": "Na\u2082CO\u2083 pump P-202 \u2014 8.1818 m\u00b3/h",
+      "label": "Na\u2082CO\u2083 pump P-202 \u2014 10.9091 m\u00b3/h",
       "nozzles": [],
       "params": {
         "baseColor": 3359061,
@@ -18943,7 +18943,7 @@ var PLANT_SPEC = {
     {
       "id": "BL-W",
       "instanceable": false,
-      "label": "Fresh water battery limit BL-W \u2014 shore main, 9 m\u00b3/h (pressure from shore)",
+      "label": "Fresh water battery limit BL-W \u2014 shore main, 7.2727 m\u00b3/h (pressure from shore)",
       "nozzles": [],
       "params": {
         "flangeColor": 12107976,
@@ -21143,7 +21143,7 @@ var PLANT_SPEC = {
       "size": 0.2346,
       "type": "flowmeter",
       "unit": "m\u00b3/h",
-      "value": 2556.818
+      "value": 2761.3635
     },
     {
       "color": 9807270,
@@ -21167,7 +21167,7 @@ var PLANT_SPEC = {
       "size": 0.4714,
       "type": "flowmeter",
       "unit": "m\u00b3/h",
-      "value": 21.0
+      "value": 16.7273
     },
     {
       "color": 9807270,
@@ -21179,7 +21179,7 @@ var PLANT_SPEC = {
       "size": 0.5199,
       "type": "flowmeter",
       "unit": "m\u00b3/h",
-      "value": 8.1818
+      "value": 10.9091
     },
     {
       "color": 9807270,
@@ -21201,13 +21201,13 @@ var PLANT_SPEC = {
       "size": 0.2219,
       "type": "flowmeter",
       "unit": "m\u00b3/h",
-      "value": 511.4
+      "value": 552.3
     },
     {
       "color": 9807270,
       "connectionId": "L-SK-01-BR",
       "id": "FCV-SK-01",
-      "label": "holds 511 m\u00b3/h per skid, set from CP-01",
+      "label": "holds 552 m\u00b3/h per skid, set from CP-01",
       "position": 0.68,
       "size": 0.2219,
       "state": "open",
@@ -21243,13 +21243,13 @@ var PLANT_SPEC = {
       "size": 0.2219,
       "type": "flowmeter",
       "unit": "m\u00b3/h",
-      "value": 511.4
+      "value": 552.3
     },
     {
       "color": 9807270,
       "connectionId": "L-SK-02-BR",
       "id": "FCV-SK-02",
-      "label": "holds 511 m\u00b3/h per skid, set from CP-02",
+      "label": "holds 552 m\u00b3/h per skid, set from CP-02",
       "position": 0.68,
       "size": 0.2219,
       "state": "open",
@@ -21285,13 +21285,13 @@ var PLANT_SPEC = {
       "size": 0.2219,
       "type": "flowmeter",
       "unit": "m\u00b3/h",
-      "value": 511.4
+      "value": 552.3
     },
     {
       "color": 9807270,
       "connectionId": "L-SK-03-BR",
       "id": "FCV-SK-03",
-      "label": "holds 511 m\u00b3/h per skid, set from CP-03",
+      "label": "holds 552 m\u00b3/h per skid, set from CP-03",
       "position": 0.68,
       "size": 0.2219,
       "state": "open",
@@ -21327,13 +21327,13 @@ var PLANT_SPEC = {
       "size": 0.2219,
       "type": "flowmeter",
       "unit": "m\u00b3/h",
-      "value": 511.4
+      "value": 552.3
     },
     {
       "color": 9807270,
       "connectionId": "L-SK-04-BR",
       "id": "FCV-SK-04",
-      "label": "holds 511 m\u00b3/h per skid, set from CP-04",
+      "label": "holds 552 m\u00b3/h per skid, set from CP-04",
       "position": 0.68,
       "size": 0.2219,
       "state": "open",
@@ -21369,13 +21369,13 @@ var PLANT_SPEC = {
       "size": 0.2219,
       "type": "flowmeter",
       "unit": "m\u00b3/h",
-      "value": 511.4
+      "value": 552.3
     },
     {
       "color": 9807270,
       "connectionId": "L-SK-05-BR",
       "id": "FCV-SK-05",
-      "label": "holds 511 m\u00b3/h per skid, set from CP-05",
+      "label": "holds 552 m\u00b3/h per skid, set from CP-05",
       "position": 0.68,
       "size": 0.2219,
       "state": "open",
@@ -21398,10 +21398,10 @@ var PLANT_SPEC = {
       "jitter": 0.0,
       "position": 0.3,
       "readout": false,
-      "size": 0.5199,
+      "size": 0.5774,
       "type": "flowmeter",
       "unit": "m\u00b3/h",
-      "value": 9.0
+      "value": 7.2727
     },
     {
       "color": 9807270,
@@ -21410,14 +21410,14 @@ var PLANT_SPEC = {
       "label": "Shore water isolation at the deck edge",
       "opening": 1.0,
       "position": 0.36,
-      "size": 0.5199,
+      "size": 0.5774,
       "type": "handvalve"
     }
   ],
   "plant": {
     "id": "pontoon-200-ds",
     "lightweight": true,
-    "name": "Floating DLE plant \u2014 200 parallel columns on 5 skids, 2557 m\u00b3/h, 50 kg per column \u00b7 Dead Sea modes",
+    "name": "Floating DLE plant \u2014 200 parallel columns on 5 skids, 2761 m\u00b3/h, 50 kg per column \u00b7 Dead Sea modes",
     "pipeRadius": 0.04
   },
   "schemaVersion": "1.0",
@@ -26551,7 +26551,7 @@ var PLANT_SPEC = {
         "steps": [
           {
             "color": 3050375,
-            "hours": 0.3,
+            "hours": 0.39166666666666666,
             "key": "sorption",
             "phase": "ds-sorb",
             "regen": false,
@@ -26591,7 +26591,7 @@ var PLANT_SPEC = {
           },
           {
             "color": 3066993,
-            "hours": 0.2,
+            "hours": 0.016666666666666666,
             "key": "Na\u2082CO\u2083 wash",
             "phase": "ds-a-nacl",
             "regen": true,
@@ -26599,7 +26599,7 @@ var PLANT_SPEC = {
           },
           {
             "color": 3050375,
-            "hours": 0.3,
+            "hours": 0.39166666666666666,
             "key": "sorption",
             "phase": "ds-sorb",
             "regen": false,
@@ -26639,7 +26639,7 @@ var PLANT_SPEC = {
           },
           {
             "color": 3066993,
-            "hours": 0.2,
+            "hours": 0.016666666666666666,
             "key": "Na\u2082CO\u2083 wash",
             "phase": "ds-b-nacl",
             "regen": true,
@@ -26684,7 +26684,7 @@ var PLANT_SPEC = {
             "equipment": "SK-01",
             "group": "SK-01",
             "label": "A2/B2",
-            "offset": 0.12,
+            "offset": 0.1108,
             "pair": 2
           },
           {
@@ -26704,7 +26704,7 @@ var PLANT_SPEC = {
             "equipment": "SK-01",
             "group": "SK-01",
             "label": "A3/B3",
-            "offset": 0.24,
+            "offset": 0.2216,
             "pair": 3
           },
           {
@@ -26724,7 +26724,7 @@ var PLANT_SPEC = {
             "equipment": "SK-01",
             "group": "SK-01",
             "label": "A4/B4",
-            "offset": 0.36,
+            "offset": 0.3324,
             "pair": 4
           },
           {
@@ -26744,7 +26744,7 @@ var PLANT_SPEC = {
             "equipment": "SK-01",
             "group": "SK-01",
             "label": "A5/B5",
-            "offset": 0.48,
+            "offset": 0.4432,
             "pair": 5
           },
           {
@@ -26764,7 +26764,7 @@ var PLANT_SPEC = {
             "equipment": "SK-01",
             "group": "SK-01",
             "label": "A6/B6",
-            "offset": 0.6,
+            "offset": 0.554,
             "pair": 6
           },
           {
@@ -26784,7 +26784,7 @@ var PLANT_SPEC = {
             "equipment": "SK-01",
             "group": "SK-01",
             "label": "A7/B7",
-            "offset": 0.72,
+            "offset": 0.6648,
             "pair": 7
           },
           {
@@ -26804,7 +26804,7 @@ var PLANT_SPEC = {
             "equipment": "SK-01",
             "group": "SK-01",
             "label": "A8/B8",
-            "offset": 0.84,
+            "offset": 0.7756,
             "pair": 8
           },
           {
@@ -26824,7 +26824,7 @@ var PLANT_SPEC = {
             "equipment": "SK-01",
             "group": "SK-01",
             "label": "A9/B9",
-            "offset": 0.96,
+            "offset": 0.8864,
             "pair": 9
           },
           {
@@ -26844,7 +26844,7 @@ var PLANT_SPEC = {
             "equipment": "SK-01",
             "group": "SK-01",
             "label": "A10/B10",
-            "offset": 1.08,
+            "offset": 0.9972,
             "pair": 10
           },
           {
@@ -26864,7 +26864,7 @@ var PLANT_SPEC = {
             "equipment": "SK-01",
             "group": "SK-01",
             "label": "A11/B11",
-            "offset": 1.2,
+            "offset": 1.108,
             "pair": 11
           },
           {
@@ -26884,7 +26884,7 @@ var PLANT_SPEC = {
             "equipment": "SK-01",
             "group": "SK-01",
             "label": "A12/B12",
-            "offset": 1.32,
+            "offset": 1.2188,
             "pair": 12
           },
           {
@@ -26904,7 +26904,7 @@ var PLANT_SPEC = {
             "equipment": "SK-01",
             "group": "SK-01",
             "label": "A13/B13",
-            "offset": 1.44,
+            "offset": 1.3296,
             "pair": 13
           },
           {
@@ -26924,7 +26924,7 @@ var PLANT_SPEC = {
             "equipment": "SK-01",
             "group": "SK-01",
             "label": "A14/B14",
-            "offset": 1.56,
+            "offset": 1.4404,
             "pair": 14
           },
           {
@@ -26944,7 +26944,7 @@ var PLANT_SPEC = {
             "equipment": "SK-01",
             "group": "SK-01",
             "label": "A15/B15",
-            "offset": 1.68,
+            "offset": 1.5512,
             "pair": 15
           },
           {
@@ -26964,7 +26964,7 @@ var PLANT_SPEC = {
             "equipment": "SK-01",
             "group": "SK-01",
             "label": "A16/B16",
-            "offset": 1.8,
+            "offset": 1.662,
             "pair": 16
           },
           {
@@ -26984,7 +26984,7 @@ var PLANT_SPEC = {
             "equipment": "SK-01",
             "group": "SK-01",
             "label": "A17/B17",
-            "offset": 1.92,
+            "offset": 1.7728,
             "pair": 17
           },
           {
@@ -27004,7 +27004,7 @@ var PLANT_SPEC = {
             "equipment": "SK-01",
             "group": "SK-01",
             "label": "A18/B18",
-            "offset": 2.04,
+            "offset": 1.8836,
             "pair": 18
           },
           {
@@ -27024,7 +27024,7 @@ var PLANT_SPEC = {
             "equipment": "SK-01",
             "group": "SK-01",
             "label": "A19/B19",
-            "offset": 2.16,
+            "offset": 1.9944,
             "pair": 19
           },
           {
@@ -27044,7 +27044,7 @@ var PLANT_SPEC = {
             "equipment": "SK-01",
             "group": "SK-01",
             "label": "A20/B20",
-            "offset": 2.28,
+            "offset": 2.1052,
             "pair": 20
           },
           {
@@ -27084,7 +27084,7 @@ var PLANT_SPEC = {
             "equipment": "SK-02",
             "group": "SK-02",
             "label": "A2/B2",
-            "offset": 0.14,
+            "offset": 0.1308,
             "pair": 2
           },
           {
@@ -27104,7 +27104,7 @@ var PLANT_SPEC = {
             "equipment": "SK-02",
             "group": "SK-02",
             "label": "A3/B3",
-            "offset": 0.26,
+            "offset": 0.2416,
             "pair": 3
           },
           {
@@ -27124,7 +27124,7 @@ var PLANT_SPEC = {
             "equipment": "SK-02",
             "group": "SK-02",
             "label": "A4/B4",
-            "offset": 0.38,
+            "offset": 0.3524,
             "pair": 4
           },
           {
@@ -27144,7 +27144,7 @@ var PLANT_SPEC = {
             "equipment": "SK-02",
             "group": "SK-02",
             "label": "A5/B5",
-            "offset": 0.5,
+            "offset": 0.4632,
             "pair": 5
           },
           {
@@ -27164,7 +27164,7 @@ var PLANT_SPEC = {
             "equipment": "SK-02",
             "group": "SK-02",
             "label": "A6/B6",
-            "offset": 0.62,
+            "offset": 0.574,
             "pair": 6
           },
           {
@@ -27184,7 +27184,7 @@ var PLANT_SPEC = {
             "equipment": "SK-02",
             "group": "SK-02",
             "label": "A7/B7",
-            "offset": 0.74,
+            "offset": 0.6848,
             "pair": 7
           },
           {
@@ -27204,7 +27204,7 @@ var PLANT_SPEC = {
             "equipment": "SK-02",
             "group": "SK-02",
             "label": "A8/B8",
-            "offset": 0.86,
+            "offset": 0.7956,
             "pair": 8
           },
           {
@@ -27224,7 +27224,7 @@ var PLANT_SPEC = {
             "equipment": "SK-02",
             "group": "SK-02",
             "label": "A9/B9",
-            "offset": 0.98,
+            "offset": 0.9064,
             "pair": 9
           },
           {
@@ -27244,7 +27244,7 @@ var PLANT_SPEC = {
             "equipment": "SK-02",
             "group": "SK-02",
             "label": "A10/B10",
-            "offset": 1.1,
+            "offset": 1.0172,
             "pair": 10
           },
           {
@@ -27264,7 +27264,7 @@ var PLANT_SPEC = {
             "equipment": "SK-02",
             "group": "SK-02",
             "label": "A11/B11",
-            "offset": 1.22,
+            "offset": 1.128,
             "pair": 11
           },
           {
@@ -27284,7 +27284,7 @@ var PLANT_SPEC = {
             "equipment": "SK-02",
             "group": "SK-02",
             "label": "A12/B12",
-            "offset": 1.34,
+            "offset": 1.2388,
             "pair": 12
           },
           {
@@ -27304,7 +27304,7 @@ var PLANT_SPEC = {
             "equipment": "SK-02",
             "group": "SK-02",
             "label": "A13/B13",
-            "offset": 1.46,
+            "offset": 1.3496,
             "pair": 13
           },
           {
@@ -27324,7 +27324,7 @@ var PLANT_SPEC = {
             "equipment": "SK-02",
             "group": "SK-02",
             "label": "A14/B14",
-            "offset": 1.58,
+            "offset": 1.4604,
             "pair": 14
           },
           {
@@ -27344,7 +27344,7 @@ var PLANT_SPEC = {
             "equipment": "SK-02",
             "group": "SK-02",
             "label": "A15/B15",
-            "offset": 1.7,
+            "offset": 1.5712,
             "pair": 15
           },
           {
@@ -27364,7 +27364,7 @@ var PLANT_SPEC = {
             "equipment": "SK-02",
             "group": "SK-02",
             "label": "A16/B16",
-            "offset": 1.82,
+            "offset": 1.682,
             "pair": 16
           },
           {
@@ -27384,7 +27384,7 @@ var PLANT_SPEC = {
             "equipment": "SK-02",
             "group": "SK-02",
             "label": "A17/B17",
-            "offset": 1.94,
+            "offset": 1.7928,
             "pair": 17
           },
           {
@@ -27404,7 +27404,7 @@ var PLANT_SPEC = {
             "equipment": "SK-02",
             "group": "SK-02",
             "label": "A18/B18",
-            "offset": 2.06,
+            "offset": 1.9036,
             "pair": 18
           },
           {
@@ -27424,7 +27424,7 @@ var PLANT_SPEC = {
             "equipment": "SK-02",
             "group": "SK-02",
             "label": "A19/B19",
-            "offset": 2.18,
+            "offset": 2.0144,
             "pair": 19
           },
           {
@@ -27444,7 +27444,7 @@ var PLANT_SPEC = {
             "equipment": "SK-02",
             "group": "SK-02",
             "label": "A20/B20",
-            "offset": 2.3,
+            "offset": 2.1252,
             "pair": 20
           },
           {
@@ -27484,7 +27484,7 @@ var PLANT_SPEC = {
             "equipment": "SK-03",
             "group": "SK-03",
             "label": "A2/B2",
-            "offset": 0.16,
+            "offset": 0.1508,
             "pair": 2
           },
           {
@@ -27504,7 +27504,7 @@ var PLANT_SPEC = {
             "equipment": "SK-03",
             "group": "SK-03",
             "label": "A3/B3",
-            "offset": 0.28,
+            "offset": 0.2616,
             "pair": 3
           },
           {
@@ -27524,7 +27524,7 @@ var PLANT_SPEC = {
             "equipment": "SK-03",
             "group": "SK-03",
             "label": "A4/B4",
-            "offset": 0.4,
+            "offset": 0.3724,
             "pair": 4
           },
           {
@@ -27544,7 +27544,7 @@ var PLANT_SPEC = {
             "equipment": "SK-03",
             "group": "SK-03",
             "label": "A5/B5",
-            "offset": 0.52,
+            "offset": 0.4832,
             "pair": 5
           },
           {
@@ -27564,7 +27564,7 @@ var PLANT_SPEC = {
             "equipment": "SK-03",
             "group": "SK-03",
             "label": "A6/B6",
-            "offset": 0.64,
+            "offset": 0.594,
             "pair": 6
           },
           {
@@ -27584,7 +27584,7 @@ var PLANT_SPEC = {
             "equipment": "SK-03",
             "group": "SK-03",
             "label": "A7/B7",
-            "offset": 0.76,
+            "offset": 0.7048,
             "pair": 7
           },
           {
@@ -27604,7 +27604,7 @@ var PLANT_SPEC = {
             "equipment": "SK-03",
             "group": "SK-03",
             "label": "A8/B8",
-            "offset": 0.88,
+            "offset": 0.8156,
             "pair": 8
           },
           {
@@ -27624,7 +27624,7 @@ var PLANT_SPEC = {
             "equipment": "SK-03",
             "group": "SK-03",
             "label": "A9/B9",
-            "offset": 1.0,
+            "offset": 0.9264,
             "pair": 9
           },
           {
@@ -27644,7 +27644,7 @@ var PLANT_SPEC = {
             "equipment": "SK-03",
             "group": "SK-03",
             "label": "A10/B10",
-            "offset": 1.12,
+            "offset": 1.0372,
             "pair": 10
           },
           {
@@ -27664,7 +27664,7 @@ var PLANT_SPEC = {
             "equipment": "SK-03",
             "group": "SK-03",
             "label": "A11/B11",
-            "offset": 1.24,
+            "offset": 1.148,
             "pair": 11
           },
           {
@@ -27684,7 +27684,7 @@ var PLANT_SPEC = {
             "equipment": "SK-03",
             "group": "SK-03",
             "label": "A12/B12",
-            "offset": 1.36,
+            "offset": 1.2588,
             "pair": 12
           },
           {
@@ -27704,7 +27704,7 @@ var PLANT_SPEC = {
             "equipment": "SK-03",
             "group": "SK-03",
             "label": "A13/B13",
-            "offset": 1.48,
+            "offset": 1.3696,
             "pair": 13
           },
           {
@@ -27724,7 +27724,7 @@ var PLANT_SPEC = {
             "equipment": "SK-03",
             "group": "SK-03",
             "label": "A14/B14",
-            "offset": 1.6,
+            "offset": 1.4804,
             "pair": 14
           },
           {
@@ -27744,7 +27744,7 @@ var PLANT_SPEC = {
             "equipment": "SK-03",
             "group": "SK-03",
             "label": "A15/B15",
-            "offset": 1.72,
+            "offset": 1.5912,
             "pair": 15
           },
           {
@@ -27764,7 +27764,7 @@ var PLANT_SPEC = {
             "equipment": "SK-03",
             "group": "SK-03",
             "label": "A16/B16",
-            "offset": 1.84,
+            "offset": 1.702,
             "pair": 16
           },
           {
@@ -27784,7 +27784,7 @@ var PLANT_SPEC = {
             "equipment": "SK-03",
             "group": "SK-03",
             "label": "A17/B17",
-            "offset": 1.96,
+            "offset": 1.8128,
             "pair": 17
           },
           {
@@ -27804,7 +27804,7 @@ var PLANT_SPEC = {
             "equipment": "SK-03",
             "group": "SK-03",
             "label": "A18/B18",
-            "offset": 2.08,
+            "offset": 1.9236,
             "pair": 18
           },
           {
@@ -27824,7 +27824,7 @@ var PLANT_SPEC = {
             "equipment": "SK-03",
             "group": "SK-03",
             "label": "A19/B19",
-            "offset": 2.2,
+            "offset": 2.0344,
             "pair": 19
           },
           {
@@ -27844,7 +27844,7 @@ var PLANT_SPEC = {
             "equipment": "SK-03",
             "group": "SK-03",
             "label": "A20/B20",
-            "offset": 2.32,
+            "offset": 2.1452,
             "pair": 20
           },
           {
@@ -27884,7 +27884,7 @@ var PLANT_SPEC = {
             "equipment": "SK-04",
             "group": "SK-04",
             "label": "A2/B2",
-            "offset": 0.18,
+            "offset": 0.1708,
             "pair": 2
           },
           {
@@ -27904,7 +27904,7 @@ var PLANT_SPEC = {
             "equipment": "SK-04",
             "group": "SK-04",
             "label": "A3/B3",
-            "offset": 0.3,
+            "offset": 0.2816,
             "pair": 3
           },
           {
@@ -27924,7 +27924,7 @@ var PLANT_SPEC = {
             "equipment": "SK-04",
             "group": "SK-04",
             "label": "A4/B4",
-            "offset": 0.42,
+            "offset": 0.3924,
             "pair": 4
           },
           {
@@ -27944,7 +27944,7 @@ var PLANT_SPEC = {
             "equipment": "SK-04",
             "group": "SK-04",
             "label": "A5/B5",
-            "offset": 0.54,
+            "offset": 0.5032,
             "pair": 5
           },
           {
@@ -27964,7 +27964,7 @@ var PLANT_SPEC = {
             "equipment": "SK-04",
             "group": "SK-04",
             "label": "A6/B6",
-            "offset": 0.66,
+            "offset": 0.614,
             "pair": 6
           },
           {
@@ -27984,7 +27984,7 @@ var PLANT_SPEC = {
             "equipment": "SK-04",
             "group": "SK-04",
             "label": "A7/B7",
-            "offset": 0.78,
+            "offset": 0.7248,
             "pair": 7
           },
           {
@@ -28004,7 +28004,7 @@ var PLANT_SPEC = {
             "equipment": "SK-04",
             "group": "SK-04",
             "label": "A8/B8",
-            "offset": 0.9,
+            "offset": 0.8356,
             "pair": 8
           },
           {
@@ -28024,7 +28024,7 @@ var PLANT_SPEC = {
             "equipment": "SK-04",
             "group": "SK-04",
             "label": "A9/B9",
-            "offset": 1.02,
+            "offset": 0.9464,
             "pair": 9
           },
           {
@@ -28044,7 +28044,7 @@ var PLANT_SPEC = {
             "equipment": "SK-04",
             "group": "SK-04",
             "label": "A10/B10",
-            "offset": 1.14,
+            "offset": 1.0572,
             "pair": 10
           },
           {
@@ -28064,7 +28064,7 @@ var PLANT_SPEC = {
             "equipment": "SK-04",
             "group": "SK-04",
             "label": "A11/B11",
-            "offset": 1.26,
+            "offset": 1.168,
             "pair": 11
           },
           {
@@ -28084,7 +28084,7 @@ var PLANT_SPEC = {
             "equipment": "SK-04",
             "group": "SK-04",
             "label": "A12/B12",
-            "offset": 1.38,
+            "offset": 1.2788,
             "pair": 12
           },
           {
@@ -28104,7 +28104,7 @@ var PLANT_SPEC = {
             "equipment": "SK-04",
             "group": "SK-04",
             "label": "A13/B13",
-            "offset": 1.5,
+            "offset": 1.3896,
             "pair": 13
           },
           {
@@ -28124,7 +28124,7 @@ var PLANT_SPEC = {
             "equipment": "SK-04",
             "group": "SK-04",
             "label": "A14/B14",
-            "offset": 1.62,
+            "offset": 1.5004,
             "pair": 14
           },
           {
@@ -28144,7 +28144,7 @@ var PLANT_SPEC = {
             "equipment": "SK-04",
             "group": "SK-04",
             "label": "A15/B15",
-            "offset": 1.74,
+            "offset": 1.6112,
             "pair": 15
           },
           {
@@ -28164,7 +28164,7 @@ var PLANT_SPEC = {
             "equipment": "SK-04",
             "group": "SK-04",
             "label": "A16/B16",
-            "offset": 1.86,
+            "offset": 1.722,
             "pair": 16
           },
           {
@@ -28184,7 +28184,7 @@ var PLANT_SPEC = {
             "equipment": "SK-04",
             "group": "SK-04",
             "label": "A17/B17",
-            "offset": 1.98,
+            "offset": 1.8328,
             "pair": 17
           },
           {
@@ -28204,7 +28204,7 @@ var PLANT_SPEC = {
             "equipment": "SK-04",
             "group": "SK-04",
             "label": "A18/B18",
-            "offset": 2.1,
+            "offset": 1.9436,
             "pair": 18
           },
           {
@@ -28224,7 +28224,7 @@ var PLANT_SPEC = {
             "equipment": "SK-04",
             "group": "SK-04",
             "label": "A19/B19",
-            "offset": 2.22,
+            "offset": 2.0544,
             "pair": 19
           },
           {
@@ -28244,7 +28244,7 @@ var PLANT_SPEC = {
             "equipment": "SK-04",
             "group": "SK-04",
             "label": "A20/B20",
-            "offset": 2.34,
+            "offset": 2.1652,
             "pair": 20
           },
           {
@@ -28284,7 +28284,7 @@ var PLANT_SPEC = {
             "equipment": "SK-05",
             "group": "SK-05",
             "label": "A2/B2",
-            "offset": 0.2,
+            "offset": 0.1908,
             "pair": 2
           },
           {
@@ -28304,7 +28304,7 @@ var PLANT_SPEC = {
             "equipment": "SK-05",
             "group": "SK-05",
             "label": "A3/B3",
-            "offset": 0.32,
+            "offset": 0.3016,
             "pair": 3
           },
           {
@@ -28324,7 +28324,7 @@ var PLANT_SPEC = {
             "equipment": "SK-05",
             "group": "SK-05",
             "label": "A4/B4",
-            "offset": 0.44,
+            "offset": 0.4124,
             "pair": 4
           },
           {
@@ -28344,7 +28344,7 @@ var PLANT_SPEC = {
             "equipment": "SK-05",
             "group": "SK-05",
             "label": "A5/B5",
-            "offset": 0.56,
+            "offset": 0.5232,
             "pair": 5
           },
           {
@@ -28364,7 +28364,7 @@ var PLANT_SPEC = {
             "equipment": "SK-05",
             "group": "SK-05",
             "label": "A6/B6",
-            "offset": 0.68,
+            "offset": 0.634,
             "pair": 6
           },
           {
@@ -28384,7 +28384,7 @@ var PLANT_SPEC = {
             "equipment": "SK-05",
             "group": "SK-05",
             "label": "A7/B7",
-            "offset": 0.8,
+            "offset": 0.7448,
             "pair": 7
           },
           {
@@ -28404,7 +28404,7 @@ var PLANT_SPEC = {
             "equipment": "SK-05",
             "group": "SK-05",
             "label": "A8/B8",
-            "offset": 0.92,
+            "offset": 0.8556,
             "pair": 8
           },
           {
@@ -28424,7 +28424,7 @@ var PLANT_SPEC = {
             "equipment": "SK-05",
             "group": "SK-05",
             "label": "A9/B9",
-            "offset": 1.04,
+            "offset": 0.9664,
             "pair": 9
           },
           {
@@ -28444,7 +28444,7 @@ var PLANT_SPEC = {
             "equipment": "SK-05",
             "group": "SK-05",
             "label": "A10/B10",
-            "offset": 1.16,
+            "offset": 1.0772,
             "pair": 10
           },
           {
@@ -28464,7 +28464,7 @@ var PLANT_SPEC = {
             "equipment": "SK-05",
             "group": "SK-05",
             "label": "A11/B11",
-            "offset": 1.28,
+            "offset": 1.188,
             "pair": 11
           },
           {
@@ -28484,7 +28484,7 @@ var PLANT_SPEC = {
             "equipment": "SK-05",
             "group": "SK-05",
             "label": "A12/B12",
-            "offset": 1.4,
+            "offset": 1.2988,
             "pair": 12
           },
           {
@@ -28504,7 +28504,7 @@ var PLANT_SPEC = {
             "equipment": "SK-05",
             "group": "SK-05",
             "label": "A13/B13",
-            "offset": 1.52,
+            "offset": 1.4096,
             "pair": 13
           },
           {
@@ -28524,7 +28524,7 @@ var PLANT_SPEC = {
             "equipment": "SK-05",
             "group": "SK-05",
             "label": "A14/B14",
-            "offset": 1.64,
+            "offset": 1.5204,
             "pair": 14
           },
           {
@@ -28544,7 +28544,7 @@ var PLANT_SPEC = {
             "equipment": "SK-05",
             "group": "SK-05",
             "label": "A15/B15",
-            "offset": 1.76,
+            "offset": 1.6312,
             "pair": 15
           },
           {
@@ -28564,7 +28564,7 @@ var PLANT_SPEC = {
             "equipment": "SK-05",
             "group": "SK-05",
             "label": "A16/B16",
-            "offset": 1.88,
+            "offset": 1.742,
             "pair": 16
           },
           {
@@ -28584,7 +28584,7 @@ var PLANT_SPEC = {
             "equipment": "SK-05",
             "group": "SK-05",
             "label": "A17/B17",
-            "offset": 2.0,
+            "offset": 1.8528,
             "pair": 17
           },
           {
@@ -28604,7 +28604,7 @@ var PLANT_SPEC = {
             "equipment": "SK-05",
             "group": "SK-05",
             "label": "A18/B18",
-            "offset": 2.12,
+            "offset": 1.9636,
             "pair": 18
           },
           {
@@ -28624,7 +28624,7 @@ var PLANT_SPEC = {
             "equipment": "SK-05",
             "group": "SK-05",
             "label": "A19/B19",
-            "offset": 2.24,
+            "offset": 2.0744,
             "pair": 19
           },
           {
@@ -28644,7 +28644,7 @@ var PLANT_SPEC = {
             "equipment": "SK-05",
             "group": "SK-05",
             "label": "A20/B20",
-            "offset": 2.36,
+            "offset": 2.1852,
             "pair": 20
           }
         ]
@@ -28719,7 +28719,7 @@ var PLANT_SPEC = {
             {
               "color": null,
               "key": "FCV",
-              "text": "Flow control valve on each skid branch, 511 m\u00b3/h"
+              "text": "Flow control valve on each skid branch, 552 m\u00b3/h"
             },
             {
               "color": null,
@@ -28799,17 +28799,17 @@ var PLANT_SPEC = {
             {
               "color": null,
               "key": "Brine",
-              "text": "125 columns sorbing at a time (5 of 8): 511 m\u00b3/h per skid, 2557 m\u00b3/h in all"
+              "text": "135 columns sorbing at a time: 552 m\u00b3/h per skid, 2761 m\u00b3/h in all"
             },
             {
               "color": null,
               "key": "Cycle",
-              "text": "Dead Sea modes, 2.4 h: sorption 1.5 h \u2192 water wash 0.2 h \u2192 desorption H\u2082SO\u2084 0.8 M 0.5 h in five fractions (Fr-1, Fr-4/5 to sulfate, Fr-2/3 to eluate) \u2192 Na\u2082CO\u2083 wash 2 BV 0.2 h; regeneration 0.9 h; slots 0.12 h apart"
+              "text": "Dead Sea modes, 2.22 h: sorption 1.5 h \u2192 water wash 0.2 h \u2192 desorption H\u2082SO\u2084 0.8 M 0.5 h in five fractions (Fr-1, Fr-4/5 to sulfate, Fr-2/3 to eluate) \u2192 Na\u2082CO\u2083 wash 2 BV in 1 min; regeneration 43 min; slots 0.1108 h apart"
             },
             {
               "color": null,
               "key": "Regeneration",
-              "text": "up to 76 columns at a time: water and H\u2082SO\u2084 0.8 M 0.5 m\u00b3/h per column (est.), Na\u2082CO\u2083 2 BV in 0.2 h = 0.45 m\u00b3/h; peak water 9 m\u00b3/h, H\u2082SO\u2084 0.8 M 21 m\u00b3/h, Na\u2082CO\u2083 8.1818 m\u00b3/h"
+              "text": "water wash and H\u2082SO\u2084 0.8 M 8 BV/h = 0.36 m\u00b3/h per column, Na\u2082CO\u2083 2 BV/min = 5.45 m\u00b3/h; up to 66 columns at a time; peak water 7.2727 m\u00b3/h, H\u2082SO\u2084 0.8 M 16.7273 m\u00b3/h, Na\u2082CO\u2083 10.9091 m\u00b3/h"
             },
             {
               "color": null,
@@ -28830,26 +28830,26 @@ var PLANT_SPEC = {
         "Column: \u00d80.40 \u00d7 2.0 m, 0.6 m pitch (0.2 m between shells).",
         "Sorbent: 50 kg per column, 45.5 L, radial bed 29 mm \u00d7 1.42 m.",
         "Load: 450 BV/h \u2192 20.5 m\u00b3/h per sorbing column.",
-        "Brine: 125 columns sorbing at a time (5 of 8): 511 m\u00b3/h per skid, 2557 m\u00b3/h in all.",
-        "Cycle: Dead Sea modes, 2.4 h: sorption 1.5 h \u2192 water wash 0.2 h \u2192 desorption H\u2082SO\u2084 0.8 M 0.5 h in five fractions (Fr-1, Fr-4/5 to sulfate, Fr-2/3 to eluate) \u2192 Na\u2082CO\u2083 wash 2 BV 0.2 h; regeneration 0.9 h; slots 0.12 h apart.",
-        "Regeneration: up to 76 columns at a time: water and H\u2082SO\u2084 0.8 M 0.5 m\u00b3/h per column (est.), Na\u2082CO\u2083 2 BV in 0.2 h = 0.45 m\u00b3/h; peak water 9 m\u00b3/h, H\u2082SO\u2084 0.8 M 21 m\u00b3/h, Na\u2082CO\u2083 8.1818 m\u00b3/h.",
+        "Brine: 135 columns sorbing at a time: 552 m\u00b3/h per skid, 2761 m\u00b3/h in all.",
+        "Cycle: Dead Sea modes, 2.22 h: sorption 1.5 h \u2192 water wash 0.2 h \u2192 desorption H\u2082SO\u2084 0.8 M 0.5 h in five fractions (Fr-1, Fr-4/5 to sulfate, Fr-2/3 to eluate) \u2192 Na\u2082CO\u2083 wash 2 BV in 1 min; regeneration 43 min; slots 0.1108 h apart.",
+        "Regeneration: water wash and H\u2082SO\u2084 0.8 M 8 BV/h = 0.36 m\u00b3/h per column, Na\u2082CO\u2083 2 BV/min = 5.45 m\u00b3/h; up to 66 columns at a time; peak water 7.2727 m\u00b3/h, H\u2082SO\u2084 0.8 M 16.7273 m\u00b3/h, Na\u2082CO\u2083 10.9091 m\u00b3/h.",
         "Pontoon: 10 \u00d7 40 m deck, 1.2 m freeboard.",
         "pH setpoint TBC (\u22488\u20139, set on pilot).",
         "Filters: PI-141 before, PI-151 after; PDIT-101 on the frame: \u0394P across the filter \u2014 starts the backwash. Isolation HV-141 + HV-151 inside a bypass on tees; HV-161: Filter bypass, normally closed \u2014 maintenance only.",
         "Tank sizes and the regeneration rate are estimates."
       ],
       "revision": "",
-      "title": "Floating DLE plant \u2014 200 columns, 2557 m\u00b3/h"
+      "title": "Floating DLE plant \u2014 200 columns, 2761 m\u00b3/h"
     },
     "popups": [
       {
-        "body": "10 \u00d7 40 m pontoon. The skids stand toward the east end; the H\u2082SO\u2084, Na\u2082CO\u2083, eluate and sulfate tanks, the brine pumps and the switchboard at the west end, where the pontoon moors to the pier. Brine comes up through the moon pool (DN700 intake), the raffinate drops overboard through two funnels on the north side. Fresh water and power come from shore.<table><tr><td>Columns</td><td>200 in parallel, 5 skids of 40, each column on its own seven valves \u2014 no lead-lag</td></tr><tr><td>A / B</td><td>each skid's 40 columns stand in two rows of 20: A1\u2026A20 and B1\u2026B20; slot n = columns An and Bn on one station section. Phase buttons (H\u2082O = water wash, SODA = Na\u2082CO\u2083 wash): A+B \u2014 both columns of the slot sorb; A \u2026 \u2014 column A in that regeneration step while B sorbs alone; B \u2026 \u2014 the reverse</td></tr><tr><td>Column</td><td>\u00d80.40 \u00d7 2.0 m, 0.6 m pitch (0.2 m between shells)</td></tr><tr><td>Sorbent</td><td>50 kg per column, 45.5 L, radial bed 29 mm \u00d7 1.42 m</td></tr><tr><td>Load</td><td>450 BV/h \u2192 20.5 m\u00b3/h per sorbing column</td></tr><tr><td>Brine</td><td>125 columns sorbing at a time (5 of 8): 511 m\u00b3/h per skid, 2557 m\u00b3/h in all</td></tr><tr><td>Cycle</td><td>Dead Sea modes, 2.4 h: sorption 1.5 h \u2192 water wash 0.2 h \u2192 desorption H\u2082SO\u2084 0.8 M 0.5 h in five fractions (Fr-1, Fr-4/5 to sulfate, Fr-2/3 to eluate) \u2192 Na\u2082CO\u2083 wash 2 BV 0.2 h; regeneration 0.9 h; slots 0.12 h apart</td></tr><tr><td>Regeneration</td><td>up to 76 columns at a time: water and H\u2082SO\u2084 0.8 M 0.5 m\u00b3/h per column (est.), Na\u2082CO\u2083 2 BV in 0.2 h = 0.45 m\u00b3/h; peak water 9 m\u00b3/h, H\u2082SO\u2084 0.8 M 21 m\u00b3/h, Na\u2082CO\u2083 8.1818 m\u00b3/h</td></tr><tr><td>Pontoon</td><td>10 \u00d7 40 m deck, 1.2 m freeboard</td></tr></table>",
+        "body": "10 \u00d7 40 m pontoon. The skids stand toward the east end; the H\u2082SO\u2084, Na\u2082CO\u2083, eluate and sulfate tanks, the brine pumps and the switchboard at the west end, where the pontoon moors to the pier. Brine comes up through the moon pool (DN700 intake), the raffinate drops overboard through two funnels on the north side. Fresh water and power come from shore.<table><tr><td>Columns</td><td>200 in parallel, 5 skids of 40, each column on its own seven valves \u2014 no lead-lag</td></tr><tr><td>A / B</td><td>each skid's 40 columns stand in two rows of 20: A1\u2026A20 and B1\u2026B20; slot n = columns An and Bn on one station section. Phase buttons (H\u2082O = water wash, SODA = Na\u2082CO\u2083 wash): A+B \u2014 both columns of the slot sorb; A \u2026 \u2014 column A in that regeneration step while B sorbs alone; B \u2026 \u2014 the reverse</td></tr><tr><td>Column</td><td>\u00d80.40 \u00d7 2.0 m, 0.6 m pitch (0.2 m between shells)</td></tr><tr><td>Sorbent</td><td>50 kg per column, 45.5 L, radial bed 29 mm \u00d7 1.42 m</td></tr><tr><td>Load</td><td>450 BV/h \u2192 20.5 m\u00b3/h per sorbing column</td></tr><tr><td>Brine</td><td>135 columns sorbing at a time: 552 m\u00b3/h per skid, 2761 m\u00b3/h in all</td></tr><tr><td>Cycle</td><td>Dead Sea modes, 2.22 h: sorption 1.5 h \u2192 water wash 0.2 h \u2192 desorption H\u2082SO\u2084 0.8 M 0.5 h in five fractions (Fr-1, Fr-4/5 to sulfate, Fr-2/3 to eluate) \u2192 Na\u2082CO\u2083 wash 2 BV in 1 min; regeneration 43 min; slots 0.1108 h apart</td></tr><tr><td>Regeneration</td><td>water wash and H\u2082SO\u2084 0.8 M 8 BV/h = 0.36 m\u00b3/h per column, Na\u2082CO\u2083 2 BV/min = 5.45 m\u00b3/h; up to 66 columns at a time; peak water 7.2727 m\u00b3/h, H\u2082SO\u2084 0.8 M 16.7273 m\u00b3/h, Na\u2082CO\u2083 10.9091 m\u00b3/h</td></tr><tr><td>Pontoon</td><td>10 \u00d7 40 m deck, 1.2 m freeboard</td></tr></table>",
         "equipmentId": "PON-1",
         "status": "draft",
         "title": "PON-1 \u2014 Floating plant"
       },
       {
-        "body": "P-101 / P-102 duty at 1278 m\u00b3/h each, P-103 standby, auto-start on a duty pump trip. Each pump draws from the suction header H-SU through its hand valve and discharges through a check valve and a hand valve into H-BP.",
+        "body": "P-101 / P-102 duty at 1381 m\u00b3/h each, P-103 standby, auto-start on a duty pump trip. Each pump draws from the suction header H-SU through its hand valve and discharges through a check valve and a hand valve into H-BP.",
         "equipmentId": "H-SU",
         "status": "draft",
         "title": "Brine intake and pumps"
@@ -28861,43 +28861,43 @@ var PLANT_SPEC = {
         "title": "MCC-1 \u2014 Switchboard"
       },
       {
-        "body": "Shore main, pressure from shore, \u22489 m\u00b3/h at peak for the water washes after sorption; FI-301 and HV-301 at the deck edge. No water tank aboard: the main feeds the water trunk directly.",
+        "body": "Shore main, pressure from shore, \u22487.2727 m\u00b3/h at peak for the water washes after sorption; FI-301 and HV-301 at the deck edge. No water tank aboard: the main feeds the water trunk directly.",
         "equipmentId": "BL-W",
         "status": "draft",
         "title": "BL-W \u2014 Fresh water from shore"
       },
       {
-        "body": "20 m\u00b3 (est.), Fr-2/3 of every desorption, up to 9 m\u00b3/h: \u22482.2 h of eluate; transferred ashore (route TBC).",
+        "body": "20 m\u00b3 (est.), Fr-2/3 of every desorption, up to 7.2727 m\u00b3/h: \u22482.8 h of eluate; transferred ashore (route TBC).",
         "equipmentId": "T-401",
         "status": "draft",
         "title": "T-401 \u2014 Eluate tank"
       },
       {
-        "body": "40 radial columns of 50 kg on a 0.6 m pitch, all in parallel, no lead-lag: each column has its own seven actuated valves \u2014 brine, water, H\u2082SO\u2084 0.8 M and Na\u2082CO\u2083 onto its head, raffinate (with the water wash), eluate and sulfate off its bottom. The Dead Sea modes: sorption, water wash, desorption in five fractions (Fr-2/3 to eluate), Na\u2082CO\u2083 wash 2 BV. Columns An and Bn take their regenerations in turn, slot n (n\u22121)\u00b70.12 h behind slot 1: 25 of the skid's 40 columns sorb on average. The skid takes 511 m\u00b3/h through HV, FI and an FCV on its branch off the aisle header.",
+        "body": "40 radial columns of 50 kg on a 0.6 m pitch, all in parallel, no lead-lag: each column has its own seven actuated valves \u2014 brine, water, H\u2082SO\u2084 0.8 M and Na\u2082CO\u2083 onto its head, raffinate (with the water wash), eluate and sulfate off its bottom. The Dead Sea modes: sorption, water wash, desorption in five fractions (Fr-2/3 to eluate), Na\u2082CO\u2083 wash 2 BV. Columns An and Bn take their regenerations in turn, slot n (n\u22121)\u00b70.1108 h behind slot 1: 27 of the skid's 40 columns sorb on average. The skid takes 552 m\u00b3/h through HV, FI and an FCV on its branch off the aisle header.",
         "equipmentId": "SK-01",
         "status": "draft",
         "title": "SK-01 \u2014 Column skid, 40 parallel columns"
       },
       {
-        "body": "40 radial columns of 50 kg on a 0.6 m pitch, all in parallel, no lead-lag: each column has its own seven actuated valves \u2014 brine, water, H\u2082SO\u2084 0.8 M and Na\u2082CO\u2083 onto its head, raffinate (with the water wash), eluate and sulfate off its bottom. The Dead Sea modes: sorption, water wash, desorption in five fractions (Fr-2/3 to eluate), Na\u2082CO\u2083 wash 2 BV. Columns An and Bn take their regenerations in turn, slot n (n\u22121)\u00b70.12 h behind slot 1: 25 of the skid's 40 columns sorb on average. The skid takes 511 m\u00b3/h through HV, FI and an FCV on its branch off the aisle header.",
+        "body": "40 radial columns of 50 kg on a 0.6 m pitch, all in parallel, no lead-lag: each column has its own seven actuated valves \u2014 brine, water, H\u2082SO\u2084 0.8 M and Na\u2082CO\u2083 onto its head, raffinate (with the water wash), eluate and sulfate off its bottom. The Dead Sea modes: sorption, water wash, desorption in five fractions (Fr-2/3 to eluate), Na\u2082CO\u2083 wash 2 BV. Columns An and Bn take their regenerations in turn, slot n (n\u22121)\u00b70.1108 h behind slot 1: 27 of the skid's 40 columns sorb on average. The skid takes 552 m\u00b3/h through HV, FI and an FCV on its branch off the aisle header.",
         "equipmentId": "SK-02",
         "status": "draft",
         "title": "SK-02 \u2014 Column skid, 40 parallel columns"
       },
       {
-        "body": "40 radial columns of 50 kg on a 0.6 m pitch, all in parallel, no lead-lag: each column has its own seven actuated valves \u2014 brine, water, H\u2082SO\u2084 0.8 M and Na\u2082CO\u2083 onto its head, raffinate (with the water wash), eluate and sulfate off its bottom. The Dead Sea modes: sorption, water wash, desorption in five fractions (Fr-2/3 to eluate), Na\u2082CO\u2083 wash 2 BV. Columns An and Bn take their regenerations in turn, slot n (n\u22121)\u00b70.12 h behind slot 1: 25 of the skid's 40 columns sorb on average. The skid takes 511 m\u00b3/h through HV, FI and an FCV on its branch off the aisle header.",
+        "body": "40 radial columns of 50 kg on a 0.6 m pitch, all in parallel, no lead-lag: each column has its own seven actuated valves \u2014 brine, water, H\u2082SO\u2084 0.8 M and Na\u2082CO\u2083 onto its head, raffinate (with the water wash), eluate and sulfate off its bottom. The Dead Sea modes: sorption, water wash, desorption in five fractions (Fr-2/3 to eluate), Na\u2082CO\u2083 wash 2 BV. Columns An and Bn take their regenerations in turn, slot n (n\u22121)\u00b70.1108 h behind slot 1: 27 of the skid's 40 columns sorb on average. The skid takes 552 m\u00b3/h through HV, FI and an FCV on its branch off the aisle header.",
         "equipmentId": "SK-03",
         "status": "draft",
         "title": "SK-03 \u2014 Column skid, 40 parallel columns"
       },
       {
-        "body": "40 radial columns of 50 kg on a 0.6 m pitch, all in parallel, no lead-lag: each column has its own seven actuated valves \u2014 brine, water, H\u2082SO\u2084 0.8 M and Na\u2082CO\u2083 onto its head, raffinate (with the water wash), eluate and sulfate off its bottom. The Dead Sea modes: sorption, water wash, desorption in five fractions (Fr-2/3 to eluate), Na\u2082CO\u2083 wash 2 BV. Columns An and Bn take their regenerations in turn, slot n (n\u22121)\u00b70.12 h behind slot 1: 25 of the skid's 40 columns sorb on average. The skid takes 511 m\u00b3/h through HV, FI and an FCV on its branch off the aisle header.",
+        "body": "40 radial columns of 50 kg on a 0.6 m pitch, all in parallel, no lead-lag: each column has its own seven actuated valves \u2014 brine, water, H\u2082SO\u2084 0.8 M and Na\u2082CO\u2083 onto its head, raffinate (with the water wash), eluate and sulfate off its bottom. The Dead Sea modes: sorption, water wash, desorption in five fractions (Fr-2/3 to eluate), Na\u2082CO\u2083 wash 2 BV. Columns An and Bn take their regenerations in turn, slot n (n\u22121)\u00b70.1108 h behind slot 1: 27 of the skid's 40 columns sorb on average. The skid takes 552 m\u00b3/h through HV, FI and an FCV on its branch off the aisle header.",
         "equipmentId": "SK-04",
         "status": "draft",
         "title": "SK-04 \u2014 Column skid, 40 parallel columns"
       },
       {
-        "body": "40 radial columns of 50 kg on a 0.6 m pitch, all in parallel, no lead-lag: each column has its own seven actuated valves \u2014 brine, water, H\u2082SO\u2084 0.8 M and Na\u2082CO\u2083 onto its head, raffinate (with the water wash), eluate and sulfate off its bottom. The Dead Sea modes: sorption, water wash, desorption in five fractions (Fr-2/3 to eluate), Na\u2082CO\u2083 wash 2 BV. Columns An and Bn take their regenerations in turn, slot n (n\u22121)\u00b70.12 h behind slot 1: 25 of the skid's 40 columns sorb on average. The skid takes 511 m\u00b3/h through HV, FI and an FCV on its branch off the aisle header.",
+        "body": "40 radial columns of 50 kg on a 0.6 m pitch, all in parallel, no lead-lag: each column has its own seven actuated valves \u2014 brine, water, H\u2082SO\u2084 0.8 M and Na\u2082CO\u2083 onto its head, raffinate (with the water wash), eluate and sulfate off its bottom. The Dead Sea modes: sorption, water wash, desorption in five fractions (Fr-2/3 to eluate), Na\u2082CO\u2083 wash 2 BV. Columns An and Bn take their regenerations in turn, slot n (n\u22121)\u00b70.1108 h behind slot 1: 27 of the skid's 40 columns sorb on average. The skid takes 552 m\u00b3/h through HV, FI and an FCV on its branch off the aisle header.",
         "equipmentId": "SK-05",
         "status": "draft",
         "title": "SK-05 \u2014 Column skid, 40 parallel columns"
